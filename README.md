@@ -37,10 +37,13 @@ If you don't already have a local development environment, use one of the follow
 3. Install project dependencies: composer install
 4. Create a new .env file: cp .env.example .env
 5. Generate application key: php artisan key:generate
-6. Generate oauth private & public keys: php artisan passport:keys
+6. Create users table: php artisan migrate --seed
 7. Add your own mailtrap.io credentials in MAIL_USERNAME and MAIL_PASSWORD in the .env file
 8. Add your own database credentials in the .env file in DB_DATABASE, DB_USERNAME, DB_PASSWORD
-9. Create users table: php artisan migrate --seed
+9. Run php artisan passport:client --personal --name="Laravel Personal Access Client"
+10. Run php artisan passport:client --password --name="Laravel Password Grant Client"
+11. Add the "Laravel Password Grant Client" id to your .env file under the CLIENT_ID key
+12. Add the "Laravel Password Grant Client" secret to your .env file under the CLIENT_SECRET key
 
 # Vue Frontend Setup
 
