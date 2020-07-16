@@ -15,6 +15,8 @@ Vue Material Dashboard json API is a fullstack resource built on top of [Vue Mat
 
 JSON:API is a specification for how a client should request that resources be fetched or modified, and how a server should respond to those requests. It is designed to minimize both the number of requests and the amount of data transmitted between clients and servers. This efficiency is achieved without compromising readability, flexibility, or discoverability.
 
+[Click here to go to the JSON:API docs](https://explore.postman.com/api/6357/laravel-jsonapi)
+
 ## Prerequisites
 
 The Laravel JSON:API project requires a working Apache/Nginx local environment with PHP, Composer and MySQL.
