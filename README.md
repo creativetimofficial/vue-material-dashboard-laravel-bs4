@@ -1,6 +1,6 @@
-# [Vue Material Dashboard Laravel](https://vue-material-dashboard-laravel.creative-tim.com/?ref=mdpl-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Vue%20Material%20Dashboard%20Pro%20Laravel%E2%9D%A4%EF%B8%8F%0Ahttps%3A//vue-material-dashboard-laravel.creative-tim.com/%20%23%vue%20%23%material%20%23design%20%23dashboard%20%23laravel%20%23pro%20via%20%40CreativeTim)
+# [Vue Material Dashboard Laravel](https://vue-material-dashboard-laravel.creative-tim.com/?ref=mdpl-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Vue%20Material%20Dashboard%20Laravel%E2%9D%A4%EF%B8%8F%0Ahttps%3A//vue-material-dashboard-laravel.creative-tim.com/%20%23%vue%20%23%material%20%23design%20%23dashboard%20%23laravel%20via%20%40CreativeTim)
 
-![version](https://img.shields.io/badge/version-1.0.1-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-vue-material-dashboard-laravel.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-vue-material-dashboard-laravelpro-/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-vue-material-dashboard-laravel/ct-vue-material-dashboard-laravel.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-vue-material-dashboard-laravel/issues?q=is%3Aissue+is%3Aclosed)
+![version](https://img.shields.io/badge/version-1.0.1-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-vue-material-dashboard-laravel.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-vue-material-dashboard-laravel/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-vue-material-dashboard-laravel/ct-vue-material-dashboard-laravel.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-vue-material-dashboard-laravel/issues?q=is%3Aissue+is%3Aclosed)
 
 *Frontend version*: Material Dashboard v2.1.2. More info at https://www.creative-tim.com/product/material-dashboard
 *Vue version*: Vue Material Dashboard v1.4.0. More info at https://www.creative-tim.com/product/vue-material-dashboard
@@ -465,10 +465,9 @@ The `src\pages\Dashboard\Examples\UserProfile` is the folder with Vue components
 
 ## Versions
 
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://demos.creative-tim.com/argon-dashboard-pro/pages/dashboards/dashboard.html?ref=vmdl-readme)
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />](https://argon-dashboard-pro-laravel.creative-tim.com/?ref=vmdl-readme)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="60" height="60" />](https://www.creative-tim.com/product/vue-material-dashboard-pro)
-
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />]
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />]
+[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="50" height="50" />]
 
 | HTML | LARAVEL | VUE | LARAVEL & VUE|
 | --- | --- | --- | --- |
@@ -478,7 +477,7 @@ The `src\pages\Dashboard\Examples\UserProfile` is the folder with Vue components
 
 | Register | Login | Dashboard |
 | --- | --- | ---  |
-| [![Register](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Register.png)](https://material-dashboard-pro-laravel.creative-tim.com/register?ref=vmdl-readme)  | [![Login](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Login.png)](https://material-dashboard-pro-laravel.creative-tim.com/login?ref=vmdl-readme)  | [![Dashboard](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Dashboard.png)](https://material-dashboard-pro-laravel.creative-tim.com/?ref=vmdl-readme) |
+| [![Register](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Register.png)](https://vue-material-dashboard-laravel.creative-tim.com/register?ref=vmdl-readme)  | [![Login](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Login.png)](https://vue-material-dashboard-laravel.creative-tim.com/login?ref=vmdl-readme)  | [![Dashboard](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Dashboard.png)](https://vue-material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme) |
 
 | Profile Page | Users Page | Tables Page  |
 | --- | --- | ---  |
