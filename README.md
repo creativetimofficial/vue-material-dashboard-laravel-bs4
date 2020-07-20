@@ -465,14 +465,14 @@ The `src\pages\Dashboard\Examples\UserProfile` is the folder with Vue components
 
 ## Versions
 
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg" height="60" />](#)
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png" height="60" />](#)
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vue.jpg" height="60" />](#)
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/json-api.png" height="55" />](#)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg" height="80" />](#)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png" height="80" />](#)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/vue.jpg" height="80" />](#)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/json-api.png" height="75" />](#)
 
 | HTML | Laravel | Vue | Vue & Laravel |
 | --- | --- | --- | --- |
-| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=vmdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme) | [![Vue Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/81/original/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard?ref=vmdl-readme) | [![Vue Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/81/original/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard?ref=vmdl-readme) |
+| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=vmdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme) | [![Vue Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/81/original/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard?ref=vmdl-readme) | [![Vue Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/331/original/opt_md_vuelaravel_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard-laravel?ref=vmdl-readme) |
 
 ## Demo
 
@@ -766,7 +766,7 @@ At present, we officially aim to support the last two versions of the following 
 
 | HTML | Laravel | Vue | Vue & Laravel |
 | --- | --- | --- | --- |
-| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=vmdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme) | [![Vue Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/81/original/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard?ref=vmdl-readme) | [![Vue Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/81/original/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard?ref=vmdl-readme) |
+| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=vmdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme) | [![Vue Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/81/original/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard?ref=vmdl-readme) | [![Vue Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/331/original/opt_md_vuelaravel_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard-laravel?ref=vmdl-readme) |
 
 ## Change log
 
