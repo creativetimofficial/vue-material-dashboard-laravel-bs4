@@ -465,9 +465,9 @@ The `src\pages\Dashboard\Examples\UserProfile` is the folder with Vue components
 
 ## Versions
 
-<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />
-<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />
-<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="50" height="50" />
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />](https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true)
+[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="50" height="50" />](https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png)
 
 | HTML | LARAVEL | VUE | LARAVEL & VUE|
 | --- | --- | --- | --- |
@@ -778,9 +778,9 @@ Please see the [changelog](CHANGELOG.md) for more information on what has change
 
 ## Reporting Issues
 
-We use GitHub Issues as the official bug tracker for the Material Dashboard Laravel. Here are some advices for our users that want to report an issue:
+We use GitHub Issues as the official bug tracker for the Vue Material Dashboard Laravel. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Material Dashboard Laravel. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=vmdl-readme).
+1. Make sure that you are using the latest version of the Vue Material Dashboard Laravel. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/?ref=vmdl-readme).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
