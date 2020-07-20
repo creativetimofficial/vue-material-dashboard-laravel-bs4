@@ -467,8 +467,8 @@ The `src\pages\Dashboard\Examples\UserProfile` is the folder with Vue components
 
 [<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />](https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg)
 [<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />](https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="40" height="40" />](https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png)
-[<img src="https://jsonapi.org/images/jsonapi.png" height="60" />](https://jsonapi.org/images/jsonapi.png)
+[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" height="40" style="vertical-align: super" />](https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png)
+[<img src="https://jsonapi.org/images/jsonapi.png" height="50" style="vertical-align: super" />](https://jsonapi.org/images/jsonapi.png)
 
 | HTML | LARAVEL | VUE | LARAVEL & VUE|
 | --- | --- | --- | --- |
