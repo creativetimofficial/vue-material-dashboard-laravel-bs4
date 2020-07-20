@@ -467,8 +467,8 @@ The `src\pages\Dashboard\Examples\UserProfile` is the folder with Vue components
 
 [<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/512px-HTML5_logo_and_wordmark.svg.png" height="50" />](#)
 [<img src="https://logos-download.com/wp-content/uploads/2016/09/Laravel_logo-700x508.png" height="50" />](#)
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" height="40" style="vertical-align: super" />](#)
-[<img src="https://jsonapi.org/images/jsonapi.png" height="50" style="vertical-align: super" />](#)
+[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" height="50" style="vertical-align: super" />](#)
+[<img src="https://jsonapi.org/images/jsonapi.png" height="60" style="vertical-align: super" />](#)
 
 | HTML | LARAVEL | VUE | LARAVEL & VUE|
 | --- | --- | --- | --- |
