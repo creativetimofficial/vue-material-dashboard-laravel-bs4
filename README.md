@@ -7,7 +7,7 @@
 
 ![Product Image](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/vue-material-dashboard-laravel.gif?raw=true)
 
-Vue Material Dashboard json API is a fullstack resource built on top of [Vue Material](https://vuematerial.io/) and [Vuejs](https://vuejs.org/v2/guide/). Build awesome-looking apps with a flexible architecture across a variety of devices and operating systems. Vue Material Dashboard json API is the official Vuejs and json API version of the original Material Dashboard.
+What if your frontend came not only with reusable components, but also with a reusable backend? API-driven development is more than just a buzzword and we partnered with [UPDIVISION](https://updivision.com) to prove it. Build awesome-looking apps with a flexible architecture across a variety of devices and operating systems with Vue Material Dashboard Laravel. 
 
 # Laravel API Setup
 
@@ -465,9 +465,9 @@ The `src\pages\Dashboard\Examples\UserProfile` is the folder with Vue components
 
 ## Versions
 
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />]
-[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />]
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="50" height="50" />]
+<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/html-logo.jpg?raw=true" width="60" height="60" />
+<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/laravel_logo.png?raw=true" width="60" height="60" />
+<img src="https://s3.amazonaws.com/creativetim_bucket/github/vuejs.png" width="50" height="50" />
 
 | HTML | LARAVEL | VUE | LARAVEL & VUE|
 | --- | --- | --- | --- |
@@ -763,7 +763,7 @@ At present, we officially aim to support the last two versions of the following 
 - Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-vue-material-dashboard-laravel/issues)
 - **Dashboards:**
 
-| HTML | LARAVEL | VUE | LARAVEL & VUE|
+| HTML | Laravel | Vue | Vue & Laravel & JSON:API |
 | --- | --- | --- | --- |
 | [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/original/opt_md_thumbnail.jpg?1522232645)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=vmdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/original/opt_md_laravel_thumbnail.jpg?1554814177)](https://material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme) | [![Vue Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/81/original/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard?ref=vmdl-readme) | [![Vue Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/81/original/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard?ref=vmdl-readme) |
 
