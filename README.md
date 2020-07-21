@@ -28,29 +28,34 @@ If you don't already have a local development environment, use one of the follow
 - Mac: [How to install MAMP on MAC](https://wpshout.com/quick-guides/how-to-install-mamp-on-your-mac/)
 - Install Composer: [https://getcomposer.org/doc/00-intro.md](https://getcomposer.org/doc/00-intro.md)
 
-## Installation
+## Download
 
-### via Archive
+For the free version of the project you can either
+- download the .zip file from the Creative Tim site and extract it or 
+- make a clone from the Github repository
 
-1. Download the .zip file of the project and extract it:
-2. Navigate in your newly cloned project: cd your-json-api-project
-3. Install project dependencies: composer install
-4. Create a new .env file: cp .env.example .env
-5. Generate application key: php artisan key:generate
-6. Create users table: php artisan migrate --seed
-7. Add your own mailtrap.io credentials in MAIL_USERNAME and MAIL_PASSWORD in the .env file
-8. Add your own database credentials in the .env file in DB_DATABASE, DB_USERNAME, DB_PASSWORD
-9. Run php artisan passport:client --personal --name="Laravel Personal Access Client"
-10. Run php artisan passport:client --password --name="Laravel Password Grant Client"
-11. Add the "Laravel Password Grant Client" id to your .env file under the CLIENT_ID key
-12. Add the "Laravel Password Grant Client" secret to your .env file under the CLIENT_SECRET key
+You will get two project folders: one for the Laravel API project and one for the Vue frontend.
 
-# Vue Frontend Setup
+## Laravel API Project Installation
+
+1. Navigate in your Laravel API project folder: `cd your-laravel-json-api-project`
+2. Install project dependencies: `composer install`
+3. Create a new .env file: `cp .env.example .env`
+4. Generate application key: `php artisan key:generate`
+5. Create users table: `php artisan migrate --seed`
+6. Add your own mailtrap.io credentials in MAIL_USERNAME and MAIL_PASSWORD in the .env file
+7. Add your own database credentials in the .env file in DB_DATABASE, DB_USERNAME, DB_PASSWORD
+8. Run `php artisan passport:client --personal --name="Laravel Personal Access Client"`
+9. Run `php artisan passport:client --password --name="Laravel Password Grant Client"`
+10. Add the "Laravel Password Grant Client" id to your .env file under the CLIENT_ID key
+11. Add the "Laravel Password Grant Client" secret to your .env file under the CLIENT_SECRET key
+
+# Vue Frontend Project Installation
 
 ## Installation
 - Install Nodejs from [Nodejs Official Page](https://nodejs.org/en/)
 - Open your terminal
-- Navigate to the project
+- Navigate to the Vue frontend project folder: `cd your-vue-frontend-project`
 - Run `npm install` or `yarn install` if you use [Yarn](https://yarnpkg.com/en/)
 - Run `npm run dev` or `yarn serve` to start a local development server
 - A new tab will be opened in your browser
