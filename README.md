@@ -10,6 +10,14 @@
 
 What if your frontend came not only with reusable components, but also with a reusable backend? API-driven development is more than just a buzzword and we partnered with [UPDIVISION](https://updivision.com) to prove it. Build awesome-looking apps with a flexible architecture across a variety of devices and operating systems with Vue Material Dashboard Laravel. 
 
+# Download
+
+For the free version of the project you can either
+- download the .zip file from the Creative Tim site and extract it or 
+- make a clone from the Github repository
+
+You will get two project folders: one for the Laravel API project and one for the Vue frontend.
+
 # Laravel API Setup
 
 ## Introduction
@@ -28,14 +36,6 @@ If you don't already have a local development environment, use one of the follow
 - Linux: [How to install LAMP on Linux](https://howtoubuntu.org/how-to-install-lamp-on-ubuntu)
 - Mac: [How to install MAMP on MAC](https://wpshout.com/quick-guides/how-to-install-mamp-on-your-mac/)
 - Install Composer: [https://getcomposer.org/doc/00-intro.md](https://getcomposer.org/doc/00-intro.md)
-
-## Download
-
-For the free version of the project you can either
-- download the .zip file from the Creative Tim site and extract it or 
-- make a clone from the Github repository
-
-You will get two project folders: one for the Laravel API project and one for the Vue frontend.
 
 ## Laravel API Project Installation
 
