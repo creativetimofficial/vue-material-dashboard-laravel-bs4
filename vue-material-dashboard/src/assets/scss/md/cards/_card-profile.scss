@@ -1,0 +1,24 @@
+.md-card-profile{
+  @extend %common-card-testimonial;
+}
+
+.md-card-profile{
+  .md-card-actions{
+    border: 0;
+  }
+
+  .title{
+    color: $black-color;
+  }
+  .md-card-header:not([class*="card-header-"]){
+    background: transparent;
+  }
+  .md-card-avatar {
+    max-width: 130px;
+    max-height: 130px;
+  }
+
+  .md-button{
+    margin: 5px 1px;
+  }
+}

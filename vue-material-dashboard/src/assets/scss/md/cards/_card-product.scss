@@ -1,0 +1,50 @@
+.md-card-product{
+    margin-top: 30px;
+
+    .btn-simple.btn-just-icon{
+        padding: 0;
+    }
+
+    .title{
+      text-align: center;
+    }
+
+    .price %headings,
+    p{
+      margin: 0;
+    }
+
+    .price %headings {
+      color: initial;
+    }
+
+
+    .md-card-actions .stats .md-icon.md-theme-default.md-icon-font{
+      font-size: 16px;
+    }
+
+    .card-title,
+    .card-category,
+    .card-description{
+        text-align: center;
+    }
+    .category{
+        margin-bottom: 0;
+    }
+    .category ~ .card-title{
+        margin-top: 0;
+    }
+
+    .price{
+        font-size: 18px;
+        color: #9A9A9A;
+    }
+    .price-old{
+        text-decoration: line-through;
+        font-size: 16px;
+        color: #9A9A9A;
+    }
+    .price-new{
+        color: $brand-danger;
+    }
+}

@@ -1,0 +1,56 @@
+.md-fileinput{
+  .md-button-content{
+    position: unset;
+  }
+
+  [type="file"]{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-size: 23px;
+    cursor: pointer;
+    opacity: 0;
+  }
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+
+.file-input{
+  display: inline-block;
+  &.img-circle{
+    max-width: 150px;
+
+    .button-container{
+      flex-direction: column;
+    }
+  }
+
+  .md-button + .md-button{
+    margin-left: 5px;
+  }
+}
+
+.image-container{
+  max-width: 250px;
+  margin-bottom: 10px;
+  box-shadow: 0 10px 30px -12px rgba(0,0,0,.42), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+
+  .img-circle &{
+    border-radius: 50%;
+    max-width: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  &,
+  img{
+    border-radius: 4px;
+  }
+}

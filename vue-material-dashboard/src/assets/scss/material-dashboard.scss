@@ -1,0 +1,80 @@
+/*!
+
+ =========================================================
+ * Vue Material Dashboard Pro - v1.4.0
+ =========================================================
+
+ * Product Page: http://www.creative-tim.com/product/vue-material-dashboard-pro
+ * Copyright 2019 Creative Tim (http://www.creative-tim.com)
+
+ =========================================================
+
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+ */
+
+
+//variables and mixins
+@import "md/variables";
+@import "md/mixins";
+@import "md/shadows";
+
+// Core CSS
+@import "md/typography";
+@import "md/sidebar-and-main-panel";
+@import "md/buttons";
+@import "md/badges";
+@import "md/misc";
+@import "md/inputs";
+@import "md/forms";
+@import "md/alerts";
+@import "md/tables";
+@import "md/collapse";
+@import "md/layout";
+@import "md/checkboxes";
+@import "md/fixed-plugin";
+@import "md/radios";
+@import "md/autocomplete";
+@import "md/rtl";
+@import "md/togglebutton";
+@import "md/pagination";
+@import "md/pills";
+@import "md/pages";
+@import "md/select";
+@import "md/fileinput";
+@import "md/fixed-plugin";
+@import "md/progress";
+@import "md/tags";
+@import "md/dialogs";
+@import "md/timeline";
+@import "md/info-areas";
+@import "md/headers";
+@import "md/navbars";
+@import "md/popups";
+@import "md/footers";
+
+// Fancy Stuff
+@import "md/dropdown";
+@import "md/tabs";
+@import "md/chartist";
+@import "md/responsive";
+
+@import "md/cards";
+@import "md/cards/card-product";
+@import "md/cards/card-pricing";
+@import "md/cards/card-login";
+@import "md/cards/card-profile";
+@import "md/cards/card-testimonials";
+@import "md/cards/card-global-sales";
+@import "md/cards/card-signup";
+@import "md/cards/card-tabs";
+
+//plugin css
+@import "md/plugins/perfect-scrollbar";
+@import "md/plugins/plugin-jquery.jvectormap";
+@import "md/plugins/plugin-nouislider";
+@import "md/plugins/sweetalert2";
+@import "md/plugins/fullcalendar";
+@import "md/plugins/wizard-card";
+@import "md/plugins/md-datepicker";
+@import "md/plugins/animate";
