@@ -48,8 +48,9 @@ If you don't already have a local development environment, use one of the follow
 7. Add your own database credentials in the .env file in DB_DATABASE, DB_USERNAME, DB_PASSWORD
 8. Run `php artisan passport:client --personal --name="Laravel Personal Access Client"`
 9. Run `php artisan passport:client --password --name="Laravel Password Grant Client"`
-10. Add the "Laravel Password Grant Client" id to your .env file under the CLIENT_ID key
-11. Add the "Laravel Password Grant Client" secret to your .env file under the CLIENT_SECRET key
+10. Open the projects database and run the following query `SELECT id, secret FROM laravel_json_api_pro.oauth_clients WHERE password_client = 1;`
+11. Add the id from step 10.) to your .env file under the CLIENT_ID key
+12. Add the secret from step 10.) to your .env file under the CLIENT_SECRET key
 
 # Vue Frontend Project Installation
 
