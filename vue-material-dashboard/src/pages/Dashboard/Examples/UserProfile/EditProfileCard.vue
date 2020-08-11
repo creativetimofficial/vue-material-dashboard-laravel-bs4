@@ -1,5 +1,5 @@
 <template>
-  <form>
+  <form @submit.prevent="updateProfile">
     <md-card>
 
       <md-card-header class="md-card-header-icon">
@@ -40,7 +40,7 @@
       </md-card-content>
 
       <md-card-actions>
-        <md-button @click="updateProfile()">
+        <md-button type="submit">
           Update Profile
         </md-button>
       </md-card-actions>

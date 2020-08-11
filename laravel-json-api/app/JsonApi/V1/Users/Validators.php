@@ -44,7 +44,6 @@ class Validators extends AbstractValidators
     {
         if ($record) {
             return [
-                'id' => 'not_in:1',
                 'name' => 'sometimes',
                 'email' => [
                     'sometimes',

@@ -1,5 +1,5 @@
 <template>
-  <form ref="password_form">
+  <form ref="password_form" @submit.prevent="changePassword">
 
     <md-card>
 
@@ -35,7 +35,7 @@
       </md-card-content>
 
       <md-card-actions>
-        <md-button @click="changePassword()">
+        <md-button type="submit">
           Change Password
         </md-button>
       </md-card-actions>
