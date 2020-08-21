@@ -10,6 +10,7 @@ use GuzzleHttp\Exception\ClientException;
 use App\Http\Requests\Api\V1\Auth\LoginRequest;
 use CloudCreativity\LaravelJsonApi\Document\Error;
 use CloudCreativity\LaravelJsonApi\Http\Controllers\JsonApiController;
+use Illuminate\Support\Facades\DB;
 
 class LoginController extends JsonApiController
 {
@@ -26,11 +27,13 @@ class LoginController extends JsonApiController
             // Without this it crashes on local development
             $http = new Client(['verify' => false]);
 
+            $client = DB::table('oauth_clients')->where('password_client', 1)->first();
+
             $response = $http->post(route('passport.token'), [
                 'form_params' => [
                     'grant_type' => 'password',
-                    'client_id' => env('CLIENT_ID'),
-                    'client_secret' => env('CLIENT_SECRET'),
+                    'client_id' => $client->id,
+                    'client_secret' => $client->secret,
                     'username' => $request->email,
                     'password' => $request->password,
                     'scope' => '',
