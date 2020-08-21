@@ -40,8 +40,11 @@ If you don't already have a local development environment, use one of the follow
 - Install Composer: [https://getcomposer.org/doc/00-intro.md](https://getcomposer.org/doc/00-intro.md)
 
 Install Composer: https://getcomposer.org/doc/00-intro.md
+
 Install Node: https://nodejs.org/ (version 8.11.0+ recommended)
+
 Install NPM: https://www.npmjs.com/get-npm
+
 Install VueCLI: https://cli.vuejs.org/guide/installation.html
 
 ## Laravel JSON:API Project Installation
