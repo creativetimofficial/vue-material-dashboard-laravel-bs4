@@ -29,7 +29,9 @@ JSON:API is a specification for how a client should request that resources be fe
 
 ## Prerequisites
 
-The Laravel JSON:API project requires a working Apache/Nginx local environment with PHP, Composer and MySQL.
+The Laravel JSON:API backend project requires a working Apache/Nginx local environment with PHP, Composer and MySQL.
+
+The Laravel JSON:API frontend project requires a working local environment with NodeJS version 8.9 or above (8.11.0+ recommended), npm, VueCLI.
 
 If you don't already have a local development environment, use one of the following links:
 
@@ -38,40 +40,33 @@ If you don't already have a local development environment, use one of the follow
 - Mac: [How to install MAMP on MAC](https://wpshout.com/quick-guides/how-to-install-mamp-on-your-mac/)
 - Install Composer: [https://getcomposer.org/doc/00-intro.md](https://getcomposer.org/doc/00-intro.md)
 
-## Laravel API Project Installation
+Install Composer: https://getcomposer.org/doc/00-intro.md
+
+Install Node: https://nodejs.org/ (version 8.11.0+ recommended)
+
+Install NPM: https://www.npmjs.com/get-npm
+
+Install VueCLI: https://cli.vuejs.org/guide/installation.html
+
+## Laravel JSON:API Project Installation
 
 1. Navigate in your Laravel API project folder: `cd your-laravel-json-api-project`
 2. Install project dependencies: `composer install`
 3. Create a new .env file: `cp .env.example .env`
 4. Generate application key: `php artisan key:generate`
 5. Create users table: `php artisan migrate --seed`
-6. Add your own mailtrap.io credentials in MAIL_USERNAME and MAIL_PASSWORD in the .env file
-7. Add your own database credentials in the .env file in DB_DATABASE, DB_USERNAME, DB_PASSWORD
-8. Run `php artisan passport:client --personal --name="Laravel Personal Access Client"`
-9. Run `php artisan passport:client --password --name="Laravel Password Grant Client"`
-10. Add the "Laravel Password Grant Client" id to your .env file under the CLIENT_ID key
-11. Add the "Laravel Password Grant Client" secret to your .env file under the CLIENT_SECRET key
+6. Install Laravel Passport: `php artisan passport:install`
+7. Add your own mailtrap.io credentials in MAIL_USERNAME and MAIL_PASSWORD in the .env file
+8. Add your own database credentials in the .env file in DB_DATABASE, DB_USERNAME, DB_PASSWORD
 
-# Vue Frontend Project Installation
+## Vue Material Dashboard Project Installation
 
-## Installation
-- Install Nodejs from [Nodejs Official Page](https://nodejs.org/en/)
-- Open your terminal
-- Navigate to the Vue frontend project folder: `cd your-vue-frontend-project`
-- Run `npm install` or `yarn install` if you use [Yarn](https://yarnpkg.com/en/)
-- Run `npm run dev` or `yarn serve` to start a local development server
-- A new tab will be opened in your browser
-- Set your enviroment variables from .env file found in root folder
-  - VUE_APP_APP_BASE_URL - The base url of your application
-  - VUE_APP_API_BASE_URL - The base url of your API consumed by your application
-
-You can also run additional npm tasks such as
-- `npm run build` to build your app for production
-- `npm run lint` to run linting.
-
-## Vue-cli
-
-We used the latest 3.x [Vue CLI](https://github.com/vuejs/vue-cli) so you can configure your project in no time. You'll find everything you need inside  `package.json` + some other related files such as `.babelrc`, `.eslintrc.js` and `.postcssrc.js`
+1. Navigate to your Vue Dashboard project folder:  `cd your-vue-material-dashbord-project`
+2. Install project dependencies: `npm install`
+3. Create a new .env file: `cp .env.example .env`
+4. `VUE_APP_APP_BASE_URL` should contain the URL of your Vue Material Dashboard Project (eg. http://localhost:8080/)
+5. `VUE_APP_API_BASE_URL` should contain the URL of your Laravel JSON:API Project. (eg. http://localhost:3000/api/v1)
+6. Run `npm run dev` to start the application in a local development environment or `npm run build`  to build release distributables.
 
 ## Element-UI
 
