@@ -1,8 +1,5 @@
 # [Vue Material Dashboard Laravel](https://vue-material-dashboard-laravel.creative-tim.com/?ref=mdpl-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Vue%20Material%20Dashboard%20Laravel%E2%9D%A4%EF%B8%8F%0Ahttps%3A//vue-material-dashboard-laravel.creative-tim.com/%20%23%vue%20%23%material%20%23design%20%23dashboard%20%23laravel%20via%20%40CreativeTim)
 
-
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/ct-vue-material-dashboard-laravel.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-vue-material-dashboard-laravel/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/ct-vue-material-dashboard-laravel/ct-vue-material-dashboard-laravel.svg?maxAge=2592000)](https://github.com/creativetimofficial/ct-vue-material-dashboard-laravel/issues?q=is%3Aissue+is%3Aclosed)
-
 ![version](https://img.shields.io/badge/version-1.0.1-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/vue-material-dashboard-laravel.svg?maxAge=2592000)](https://github.com/creativetimofficial/vue-material-dashboard-laravelpro-/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/vue-material-dashboard-laravel/vue-material-dashboard-laravel.svg?maxAge=2592000)](https://github.com/creativetimofficial/vue-material-dashboard-laravel/issues?q=is%3Aissue+is%3Aclosed)
 
 
