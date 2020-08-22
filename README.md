@@ -52,11 +52,11 @@ Install VueCLI: https://cli.vuejs.org/guide/installation.html
 1. Navigate in your Laravel API project folder: `cd your-laravel-json-api-project`
 2. Install project dependencies: `composer install`
 3. Create a new .env file: `cp .env.example .env`
-4. Generate application key: `php artisan key:generate`
+3. Add your own database credentials in the .env file in DB_DATABASE, DB_USERNAME, DB_PASSWORD
 5. Create users table: `php artisan migrate --seed`
-6. Install Laravel Passport: `php artisan passport:install`
-7. Add your own mailtrap.io credentials in MAIL_USERNAME and MAIL_PASSWORD in the .env file
-8. Add your own database credentials in the .env file in DB_DATABASE, DB_USERNAME, DB_PASSWORD
+6. Generate application key: `php artisan key:generate`
+7. Install Laravel Passport: `php artisan passport:install`
+8. Add your own mailtrap.io credentials in MAIL_USERNAME and MAIL_PASSWORD in the .env file
 
 ## Vue Material Dashboard Project Installation
 
