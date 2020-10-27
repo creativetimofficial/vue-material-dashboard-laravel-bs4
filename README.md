@@ -74,7 +74,7 @@ Vue Material Dashboard json API also uses [element-ui](https://vuematerial.io/ui
 
 ## Usage
 
-Register a user or login using admin@material.com and secret and start testing the theme.
+Register a user or login using admin@jsonapi.com and secret and start testing the theme.
 
 Besides the dashboard and the auth pages this theme also has an edit profile page. All the necessary files are installed out of the box and all the needed routes are added to `src\router\index.js`. Keep in mind that all the features can be viewed once you log in using the credentials provided above or by registering your own user.
 
@@ -84,7 +84,7 @@ You can access the dashboard either by using the "**Dashboards/Dashboard**" link
 
 ### Login
 
-The login functionality is fully implemented in our theme helping you to start your project in no time. To login into dashboard you just have to add **/login** in the URL and fill the login form with the credentials (user: **admin@material.com** and password: **secret**).
+The login functionality is fully implemented in our theme helping you to start your project in no time. To login into dashboard you just have to add **/login** in the URL and fill the login form with the credentials (user: **admin@jsonapi.com** and password: **secret**).
 
 The `src\pages\Dashboard\Pages\Login.vue` is the Vue component which handles the login functinality. You can easily adapt it to your needs.
 
