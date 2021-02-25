@@ -45,8 +45,6 @@ You will also need to install Composer 2: [https://getcomposer.org/doc/00-intro.
 ### Vue Material frontend
 The Vue Material frontend project requires a working local environment with NodeJS version 8.9 or above (8.11.0+ recommended), npm, VueCLI.
 
-Install Composer: https://getcomposer.org/doc/00-intro.md
-
 Install Node: https://nodejs.org/ (version 8.11.0+ recommended)
 
 Install NPM: https://www.npmjs.com/get-npm
