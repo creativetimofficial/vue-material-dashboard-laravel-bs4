@@ -797,8 +797,8 @@ We use GitHub Issues as the official bug tracker for the Vue Material Dashboard 
 
 ## Licensing
 
-- Copyright 2019 Creative Tim (https://www.creative-tim.com/?ref=vmdl-readme)
-- [Creative Tim License](https://www.creative-tim.com/license).
+- Copyright Creative Tim (https://www.creative-tim.com/?ref=vmdl-readme)
+- Licensed under MIT (https://github.com/creativetimofficial/vue-material-dashboard-laravel/blob/master/LICENSE.md)
 
 
 ## Useful Links
