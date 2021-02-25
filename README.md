@@ -29,7 +29,6 @@ JSON:API is a specification for how a client should request that resources be fe
 ## Prerequisites
 
 ### JSON:API backend
-
 The Laravel JSON:API backend project requires a proper multi-threaded web server such as Apache/Nginx environment with PHP, Composer and MySQL.
 
 **Do not use `php artisan serve` as it will result in stalled requests due to the single-threaded nature of the built-in PHP web server.** 
@@ -43,7 +42,8 @@ Other options for your local environment:
 
 You will also need to install Composer 2: [https://getcomposer.org/doc/00-intro.md](https://getcomposer.org/doc/00-intro.md)
 
-The Laravel JSON:API frontend project requires a working local environment with NodeJS version 8.9 or above (8.11.0+ recommended), npm, VueCLI.
+### Vue Material frontend
+The Vue Material frontend project requires a working local environment with NodeJS version 8.9 or above (8.11.0+ recommended), npm, VueCLI.
 
 Install Composer: https://getcomposer.org/doc/00-intro.md
 
