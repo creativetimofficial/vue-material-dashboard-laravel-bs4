@@ -1,11 +1,11 @@
 // =========================================================
-// * Vue Material Dashboard PRO - v1.4.0
+// * Vue Material Dashboard Laravel - v1.1.0
 // =========================================================
 //
-// * Product Page: https://www.creative-tim.com/product/vue-material-dashboard-pro
-// * Copyright 2019 Creative Tim (https://www.creative-tim.com)
+// * Product Page: https://www.creative-tim.com/product/vue-material-dashboard-laravel
+// * Copyright Creative Tim (https://www.creative-tim.com) & UPDIVISION (https://www.updivision.com)
 //
-// * Coded by Creative Tim
+// * Coded by www.creative-tim.com & www.updivision.com
 //
 // =========================================================
 //

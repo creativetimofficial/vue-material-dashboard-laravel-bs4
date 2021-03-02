@@ -59,7 +59,7 @@ export default {
       isClosed: true,
       title: 'Profile',
       rtlTitle: "تانيا أندرو",
-      avatar: process.env.VUE_APP_APP_BASE_URL + "/img/faces/marc.jpg"
+      avatar: process.env.VUE_APP_BASE_URL + "/img/faces/marc.jpg"
     };
   },
 

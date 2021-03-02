@@ -25,5 +25,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         LaravelJsonApi::defaultApi('v1');
+        LaravelJsonApi::$validationFailures = true;
     }
 }

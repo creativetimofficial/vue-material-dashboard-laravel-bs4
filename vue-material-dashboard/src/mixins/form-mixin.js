@@ -25,6 +25,10 @@ export default {
         },
         {}
       );
+    },
+
+    resetApiValidation() {
+      this.apiValidationErrors = {};
     }
   }
 };

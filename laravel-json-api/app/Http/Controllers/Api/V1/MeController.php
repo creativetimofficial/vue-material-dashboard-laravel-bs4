@@ -3,10 +3,10 @@
 namespace App\Http\Controllers\Api\V1;
 
 use GuzzleHttp\Client;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Http\JsonResponse;
 use GuzzleHttp\Exception\ClientException;
-use CloudCreativity\LaravelJsonApi\Document\Error;
+use CloudCreativity\LaravelJsonApi\Document\Error\Error;
 use CloudCreativity\LaravelJsonApi\Http\Controllers\JsonApiController;
 
 class MeController extends JsonApiController
@@ -47,7 +47,10 @@ class MeController extends JsonApiController
             return response()->json($responseBody, $responseStatus)->withHeaders($responseHeaders);
         } catch (ClientException $e) {
             $errors = json_decode($e->getResponse()->getBody()->getContents(), true)['errors'];
-            $errors = collect($errors)->map(function ($error) { return Error::create($error); })->toArray();
+    
+            $errors = collect($errors)->map(function ($error) {
+                return Error::fromArray($error);
+            });
 
             return $this->reply()->errors($errors);
         }
@@ -84,8 +87,8 @@ class MeController extends JsonApiController
             $errors = json_decode($e->getResponse()->getBody()->getContents(), true)['errors'];
 
             $errors = collect($errors)->map(function ($error) {
-                return Error::create($error);
-            })->toArray();
+                return Error::fromArray($error);
+            });
 
             return $this->reply()->errors($errors);
         }

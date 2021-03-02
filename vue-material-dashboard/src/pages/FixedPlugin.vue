@@ -151,7 +151,7 @@
         downloadUrl: "https://www.creative-tim.com/product/vue-material-dashboard-laravel",
         upgradeUrl: "https://www.creative-tim.com/product/vue-material-dashboard-laravel-pro",
         isOpen: false,
-        backgroundImage: `${process.env.VUE_APP_APP_BASE_URL}/img/sidebar-2.jpg`,
+        backgroundImage: `${process.env.VUE_APP_BASE_URL}/img/sidebar-2.jpg`,
         sidebarColors: [
           {color: "purple", active: false},
           {color: "azure", active: false},
@@ -166,10 +166,10 @@
           {colorBg: "red", active: false}
         ],
         sidebarImages: [
-          {image: `${process.env.VUE_APP_APP_BASE_URL}/img/sidebar-1.jpg`, active: false},
-          {image: `${process.env.VUE_APP_APP_BASE_URL}/img/sidebar-2.jpg`, active: true},
-          {image: `${process.env.VUE_APP_APP_BASE_URL}/img/sidebar-3.jpg`, active: false},
-          {image: `${process.env.VUE_APP_APP_BASE_URL}/img/sidebar-4.jpg`, active: false}
+          {image: `${process.env.VUE_APP_BASE_URL}/img/sidebar-1.jpg`, active: false},
+          {image: `${process.env.VUE_APP_BASE_URL}/img/sidebar-2.jpg`, active: true},
+          {image: `${process.env.VUE_APP_BASE_URL}/img/sidebar-3.jpg`, active: false},
+          {image: `${process.env.VUE_APP_BASE_URL}/img/sidebar-4.jpg`, active: false}
         ]
       };
     },

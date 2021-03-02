@@ -1,9 +1,9 @@
 <template>
   <md-toolbar
-      md-elevation="0"
-      class="md-transparent"
-      :class="{
-      'md-toolbar-absolute md-white md-fixed-top': $route.meta.navbarAbsolute
+    md-elevation="0"
+    class="md-transparent"
+    :class="{
+      'md-toolbar-absolute md-white md-fixed-top': $route.meta.navbarAbsolute,
     }"
   >
     <div class="md-toolbar-row">
@@ -12,22 +12,44 @@
       </div>
       <div class="md-toolbar-section-end">
         <md-button
-            class="md-just-icon md-round md-simple md-toolbar-toggle"
-            :class="{ toggled: $sidebar.showSidebar }"
-            @click="toggleSidebar"
+          class="md-just-icon md-round md-simple md-toolbar-toggle"
+          :class="{ toggled: $sidebar.showSidebar }"
+          @click="toggleSidebar"
         >
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </md-button>
 
+        <li class="button-container" style="margin-right: 10px">
+          <div class="">
+            <md-button
+              class="md-default md-block"
+              :href="documentationLink"
+              target="_blank"
+              >Documentation
+            </md-button>
+          </div>
+        </li>
+
+        <li class="button-container">
+          <div class="">
+            <md-button
+              class="md-success md-block"
+              :href="downloadUrl"
+              target="_blank"
+              >Download Now
+            </md-button>
+          </div>
+        </li>
+
         <div class="md-collapse">
           <div class="md-autocomplete">
             <md-autocomplete
-                class="search"
-                v-model="selectedEmployee"
-                :md-options="employees"
-                :md-open-on-focus="false"
+              class="search"
+              v-model="selectedEmployee"
+              :md-options="employees"
+              :md-open-on-focus="false"
             >
               <label v-if="$route.meta.rtlActive">بحث...</label>
               <label v-else>Search...</label>
@@ -41,15 +63,15 @@
 
             <li class="md-list-item">
               <a
-                  @click="goToNotifications"
-                  class="md-list-item-router md-list-item-container md-button-clean dropdown"
+                @click="goToNotifications"
+                class="md-list-item-router md-list-item-container md-button-clean dropdown"
               >
                 <div class="md-list-item-content">
                   <drop-down direction="down">
                     <md-button
-                        slot="title"
-                        class="md-button md-just-icon md-simple"
-                        data-toggle="dropdown"
+                      slot="title"
+                      class="md-button md-just-icon md-simple"
+                      data-toggle="dropdown"
                     >
                       <md-icon>notifications</md-icon>
                       <span class="notification">5</span>
@@ -79,37 +101,41 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        selectedEmployee: "",
-        employees: [
-          "Jim Halpert",
-          "Dwight Schrute",
-          "Michael Scott",
-          "Pam Beesly",
-          "Angela Martin",
-          "Kelly Kapoor",
-          "Ryan Howard",
-          "Kevin Malone"
-        ]
-      };
+export default {
+  data() {
+    return {
+      selectedEmployee: "",
+      employees: [
+        "Jim Halpert",
+        "Dwight Schrute",
+        "Michael Scott",
+        "Pam Beesly",
+        "Angela Martin",
+        "Kelly Kapoor",
+        "Ryan Howard",
+        "Kevin Malone",
+      ],
+      documentationLink:
+        "https://vue-material-dashboard-laravel.creative-tim.com/documentation/",
+      downloadUrl:
+        "https://www.creative-tim.com/product/vue-material-dashboard-laravel",
+    };
+  },
+  methods: {
+    toggleSidebar() {
+      this.$sidebar.displaySidebar(!this.$sidebar.showSidebar);
     },
-    methods: {
-      toggleSidebar() {
-        this.$sidebar.displaySidebar(!this.$sidebar.showSidebar);
-      },
-      minimizeSidebar() {
-        if (this.$sidebar) {
-          this.$sidebar.toggleMinimize();
-        }
-      },
-      goToNotifications(){
-        this.$router.push({name: 'Notifications'})
-      },
-      goToUsers(){
-        this.$router.push({name: 'User Profile'})
+    minimizeSidebar() {
+      if (this.$sidebar) {
+        this.$sidebar.toggleMinimize();
       }
-    }
-  };
+    },
+    goToNotifications() {
+      this.$router.push({ name: "Notifications" });
+    },
+    goToUsers() {
+      this.$router.push({ name: "User Profile" });
+    },
+  },
+};
 </script>

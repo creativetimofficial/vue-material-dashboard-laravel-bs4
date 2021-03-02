@@ -1,14 +1,14 @@
 <?php
+namespace Database\Seeders;
 
-use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
-class UsersSeeder extends Seeder
+class DatabaseSeeder extends Seeder
 {
     /**
-     * Run the database seeds.
+     * Seed the application's database.
      *
      * @return void
      */
@@ -18,10 +18,6 @@ class UsersSeeder extends Seeder
         DB::table('users')->truncate();
         Schema::enableForeignKeyConstraints();
 
-        User::create([
-            'name' => 'Admin',
-            'email' => 'admin@material.com',
-            'password' => 'secret'
-        ]);
+        $this->call(UsersSeeder::class);
     }
 }

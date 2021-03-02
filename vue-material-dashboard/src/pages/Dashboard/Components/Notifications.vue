@@ -155,11 +155,11 @@ export default {
   props: {
     registerImg: {
       type: String,
-      default: process.env.VUE_APP_APP_BASE_URL + "/img/card-1.jpg"
+      default: process.env.VUE_APP_BASE_URL + "/img/card-1.jpg"
     },
     applyImg: {
       type: String,
-      default: process.env.VUE_APP_APP_BASE_URL + "/img/card-2.jpg"
+      default: process.env.VUE_APP_BASE_URL + "/img/card-2.jpg"
     }
   },
   data() {

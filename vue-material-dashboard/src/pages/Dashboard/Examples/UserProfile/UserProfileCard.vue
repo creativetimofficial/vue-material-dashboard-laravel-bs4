@@ -24,7 +24,7 @@
     props: {
       cardUserImage: {
         type: String,
-        default: process.env.VUE_APP_APP_BASE_URL + "/img/faces/marc.jpg"
+        default: process.env.VUE_APP_BASE_URL + "/img/faces/marc.jpg"
       },
       buttonColor: {
         type: String,

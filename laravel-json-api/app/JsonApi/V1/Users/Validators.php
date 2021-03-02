@@ -40,10 +40,11 @@ class Validators extends AbstractValidators
      *      the record being updated, or null if creating a resource.
      * @return array
      */
-    protected function rules($record = null): array
+    protected function rules($record, array $data): array
     {
         if ($record) {
             return [
+                'id' => 'not_in:1',
                 'name' => 'sometimes',
                 'email' => [
                     'sometimes',

@@ -83,7 +83,7 @@ export default {
     },
     backgroundImage: {
       type: String,
-      default: `${process.env.VUE_APP_APP_BASE_URL}/img/sidebar-2.jpg`
+      default: `${process.env.VUE_APP_BASE_URL}/img/sidebar-2.jpg`
     },
     backgroundColor: {
       type: String,
@@ -95,7 +95,7 @@ export default {
     },
     logo: {
       type: String,
-      default: `${process.env.VUE_APP_APP_BASE_URL}/img/vue-logo.png`
+      default: `${process.env.VUE_APP_BASE_URL}/img/vue-logo.png`
     },
     sidebarLinks: {
       type: Array,

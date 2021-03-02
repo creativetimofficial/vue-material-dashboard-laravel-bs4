@@ -3,14 +3,12 @@
 namespace App\Http\Controllers\Api\V1\Auth;
 
 use GuzzleHttp\Client;
-use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
-use Illuminate\Support\Facades\Auth;
+use GuzzleHttp\Exception\GuzzleException;
+use Illuminate\Support\Facades\DB;
 use GuzzleHttp\Exception\ClientException;
 use App\Http\Requests\Api\V1\Auth\LoginRequest;
-use CloudCreativity\LaravelJsonApi\Document\Error;
+use CloudCreativity\LaravelJsonApi\Document\Error\Error;
 use CloudCreativity\LaravelJsonApi\Http\Controllers\JsonApiController;
-use Illuminate\Support\Facades\DB;
 
 class LoginController extends JsonApiController
 {
@@ -19,6 +17,7 @@ class LoginController extends JsonApiController
      *
      * @param LoginRequest $request
      * @return mixed
+     * @throws GuzzleException
      */
     public function __invoke(LoginRequest $request)
     {
@@ -40,15 +39,17 @@ class LoginController extends JsonApiController
                 ],
             ]);
 
-            return json_decode((string) $response->getBody(), true);
+            return json_decode((string)$response->getBody(), true);
         } catch (ClientException $e) {
-            $error = json_decode($e->getResponse()->getBody()->getContents());
+            $error = json_decode((string)$e->getResponse()->getBody());
 
-            return $this->reply()->errors(Error::create([
-                'title' => 'Bad Request',
-                'detail' => $error->message,
-                'status' => '400',
-            ]));
+            return $this->reply()->errors([
+                Error::fromArray([
+                    'title' => 'Bad Request',
+                    'detail' => $error->message,
+                    'status' => '400',
+                ])
+            ]);
         }
     }
 }

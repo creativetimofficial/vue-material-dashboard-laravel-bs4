@@ -287,7 +287,7 @@ export default {
   props: {
     profileCard: {
       type: String,
-      default: process.env.VUE_APP_APP_BASE_URL + "/img/faces/card-profile1-square.jpg"
+      default: process.env.VUE_APP_BASE_URL + "/img/faces/card-profile1-square.jpg"
     }
   },
   data() {

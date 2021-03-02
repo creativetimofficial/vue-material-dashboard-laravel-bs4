@@ -121,8 +121,8 @@ export default {
   computed: {
     setBgImage() {
       let images = {
-        Login: process.env.VUE_APP_APP_BASE_URL + "/img/login.jpg",
-        Register: process.env.VUE_APP_APP_BASE_URL + "/img/register.jpg",
+        Login: process.env.VUE_APP_BASE_URL + "/img/login.jpg",
+        Register: process.env.VUE_APP_BASE_URL + "/img/register.jpg",
       };
       return {
         backgroundImage: `url(${images[this.$route.name]})`

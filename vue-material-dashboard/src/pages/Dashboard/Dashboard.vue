@@ -311,9 +311,9 @@ export default {
 
   data() {
     return {
-      product1: process.env.VUE_APP_APP_BASE_URL + "/img/card-2.jpg",
-      product2: process.env.VUE_APP_APP_BASE_URL + "/img/card-3.jpg",
-      product3: process.env.VUE_APP_APP_BASE_URL + "/img/card-1.jpg",
+      product1: process.env.VUE_APP_BASE_URL + "/img/card-2.jpg",
+      product2: process.env.VUE_APP_BASE_URL + "/img/card-3.jpg",
+      product3: process.env.VUE_APP_BASE_URL + "/img/card-1.jpg",
       seq2: 0,
 
       selected: [],

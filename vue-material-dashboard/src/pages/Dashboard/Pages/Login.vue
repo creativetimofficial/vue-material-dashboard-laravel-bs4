@@ -10,7 +10,7 @@
       </div>
       <div class="text-center" style="margin-bottom: 32px;">
         <h5><strong>You can log in with:</strong></h5>
-        <div>Username <b>admin@material.com</b> Password <b>secret</b></div>
+        <div>Username <b>admin@jsonapi.com</b> Password <b>secret</b></div>
       </div>
     </div>
 
@@ -71,42 +71,39 @@
 </template>
 
 <script>
-import { LoginCard, ValidationError } from "@/components";
-import formMixin from "@/mixins/form-mixin";
+  import {LoginCard, ValidationError} from "@/components";
+  import formMixin from "@/mixins/form-mixin";
 
-export default {
-  components: {
-    LoginCard,
-    ValidationError,
-  },
-  mixins: [formMixin],
-  computed: {
-    isAuthenticated: function() {
-      return this.$store.getters.isAuthenticated();
+  export default {
+    components: {
+      LoginCard, ValidationError
     },
-  },
-  data: () => ({
-    email: "admin@material.com",
-    password: "secret",
-  }),
-  methods: {
-    async login() {
-      const user = {
-        data: {
-          type: "token",
-          attributes: {
-            email: this.email,
-            password: this.password,
-          },
-        },
-      };
 
-      const requestOptions = {
-        headers: {
-          Accept: "application/vnd.api+json",
-          "Content-Type": "application/vnd.api+json",
-        },
-      };
+    mixins: [formMixin],
+
+    data: () => ({
+      email: "admin@jsonapi.com",
+      password: "secret",
+    }),
+
+    methods: {
+      async login() {
+        const user = {
+          data: {
+            type: "token",
+            attributes: {
+              email: this.email,
+              password: this.password
+            }
+          }
+        }
+
+        const requestOptions = {
+          headers: {
+            'Accept': 'application/vnd.api+json',
+            'Content-Type': 'application/vnd.api+json',
+          }
+        }
 
       try {
         await this.$store.dispatch("login", { user, requestOptions });
@@ -114,8 +111,8 @@ export default {
         await this.$store.dispatch("alerts/error", "Invalid credentials!");
         this.setApiValidation(e.response.data.errors);
       }
-    },
-  },
+    }
+  }
 };
 </script>
 <style scoped>

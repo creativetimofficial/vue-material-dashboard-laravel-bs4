@@ -1,13 +1,15 @@
 <?php
+namespace Database\Seeders;
 
+use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
-class DatabaseSeeder extends Seeder
+class UsersSeeder extends Seeder
 {
     /**
-     * Seed the application's database.
+     * Run the database seeds.
      *
      * @return void
      */
@@ -17,6 +19,10 @@ class DatabaseSeeder extends Seeder
         DB::table('users')->truncate();
         Schema::enableForeignKeyConstraints();
 
-        $this->call(UsersSeeder::class);
+        User::create([
+            'name' => 'Admin',
+            'email' => 'admin@jsonapi.com',
+            'password' => 'secret'
+        ]);
     }
 }

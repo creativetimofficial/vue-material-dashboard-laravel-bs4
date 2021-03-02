@@ -16,18 +16,13 @@
         <div class="md-layout">
           <div class="md-layout-item md-size-100">
             <md-field class="md-invalid">
-              <label>Current Password</label>
+              <label>New Password</label>
               <md-input v-model="password" type="password"/>
               <validation-error :errors="apiValidationErrors.password"/>
             </md-field>
             <md-field class="md-invalid">
-              <label>New Password</label>
-              <md-input v-model="new_password" type="password"/>
-              <validation-error :errors="apiValidationErrors.password_confirmation"/>
-            </md-field>
-            <md-field class="md-invalid">
               <label>Confirm New Password</label>
-              <md-input v-model="confirm_password" type="password"/>
+              <md-input v-model="password_confirmation" type="password"/>
               <validation-error :errors="apiValidationErrors.password_confirmation"/>
             </md-field>
           </div>
@@ -60,23 +55,26 @@
 
     data: () => ({
       password: null,
-      new_password: null,
-      confirm_password: null
+      password_confirmation: null
     }),
 
     methods: {
       async changePassword() {
+
         if(["1", "2", "3"].includes(this.user.id)) {
           await this.$store.dispatch("alerts/error", "You are not allowed not change data of default users.")
           return
         }
 
-        this.user.password = this.password;
-        this.user.password_new = this.new_password;
-        this.user.password_confirmation = this.confirm_password;
+        const user = {
+          id: this.user.id,
+          type: "users",
+          password: this.password,
+          password_confirmation: this.password_confirmation
+        }
 
         try {
-          await this.$store.dispatch("users/update", this.user)
+          await this.$store.dispatch("users/update", user)
           await this.$store.dispatch("alerts/error", "Password changed successfully.")
           this.user = await this.$store.getters["profile/me"]
           this.$refs['password_form'].reset()

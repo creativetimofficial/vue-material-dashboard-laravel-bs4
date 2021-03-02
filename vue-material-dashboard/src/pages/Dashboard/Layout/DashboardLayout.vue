@@ -132,18 +132,19 @@
             path: '/components/rtl',
           }"
         />
-
-        <li class="button-container">
-          <div class="">
-            <md-button
-              class="md-block md-danger"
-              :href="upgradeUrl"
-              target="_blank"
-              >Upgrade to PRO
-            </md-button>
-          </div>
-        </li>
       </template>
+
+      <div style="width: 100%; position: absolute; bottom: 0; padding: 16px">
+        <md-button
+          v-if="sidebarMini"
+          class="md-button md-danger md-block"
+          href="https://www.creative-tim.com/product/vue-material-dashboard-laravel-pro"
+          target="_blanck"
+        >
+          <i class="fas fa-download" style="margin-right: 4px"></i>Upgrade to
+          PRO
+        </md-button>
+      </div>
     </side-bar>
 
     <div class="main-panel">
@@ -223,10 +224,10 @@ export default {
       sidebarBackgroundColor: "black",
       sidebarBackground: "green",
       sidebarBackgroundImage:
-        process.env.VUE_APP_APP_BASE_URL + "/img/sidebar-2.jpg",
+        process.env.VUE_APP_BASE_URL + "/img/sidebar-2.jpg",
       sidebarMini: true,
       sidebarImg: true,
-      image: process.env.VUE_APP_APP_BASE_URL + "/img/laravel-vue.svg",
+      image: process.env.VUE_APP_BASE_URL + "/img/laravel-vue.svg",
     };
   },
   methods: {
