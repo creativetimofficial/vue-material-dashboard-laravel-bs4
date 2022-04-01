@@ -6,7 +6,7 @@
 
 *Vue version*: Vue Material Dashboard v1.4.0. More info at https://www.creative-tim.com/product/vue-material-dashboard
 
-![Product Image](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/vue-material-dashboard-laravel.gif?raw=true)
+![Product Image](https://s3.amazonaws.com/creativetim_bucket/products/331/original/opt_md_vuelaravel_thumbnail.jpg)
 
 What if your frontend came not only with reusable components, but also with a reusable backend? API-driven development is more than just a buzzword and we partnered with [UPDIVISION](https://updivision.com) to prove it. Build awesome-looking apps with a flexible architecture across a variety of devices and operating systems with Vue Material Dashboard Laravel. 
 
