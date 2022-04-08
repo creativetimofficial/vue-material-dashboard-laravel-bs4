@@ -478,7 +478,7 @@ The `src\pages\Dashboard\Examples\UserProfile` is the folder with Vue components
 
 | HTML | Laravel |
 | --- | --- |
-| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/thumb/opt_md_thumbnail.jpg)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=vmdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/thumb/opt_md_laravel_thumbnail.jpg)](https://material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme) |
+| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/96/thumb/argon-dashboard-2.jpg)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=vmdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/thumb/opt_md_laravel_thumbnail.jpg)](https://material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme) |
 
 | Vue | Vue & Laravel |
 | --- | --- |
@@ -776,7 +776,7 @@ At present, we officially aim to support the last two versions of the following 
 
 | HTML | Laravel |
 | --- | --- |
-| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/thumb/opt_md_thumbnail.jpg)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=vmdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/thumb/opt_md_laravel_thumbnail.jpg)](https://material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme) |
+| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/96/thumb/argon-dashboard-2.jpg)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=vmdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/thumb/opt_md_laravel_thumbnail.jpg)](https://material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme) |
 
 | Vue | Vue & Laravel |
 | --- | --- |
