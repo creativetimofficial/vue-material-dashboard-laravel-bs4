@@ -6,7 +6,7 @@
 
 *Vue version*: Vue Material Dashboard v1.4.0. More info at https://www.creative-tim.com/product/vue-material-dashboard
 
-![Product Image](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/vue-material-dashboard-laravel.gif?raw=true)
+![Product Image](https://s3.amazonaws.com/creativetim_bucket/products/331/original/opt_md_vuelaravel_thumbnail.jpg)
 
 What if your frontend came not only with reusable components, but also with a reusable backend? API-driven development is more than just a buzzword and we partnered with [UPDIVISION](https://updivision.com) to prove it. Build awesome-looking apps with a flexible architecture across a variety of devices and operating systems with Vue Material Dashboard Laravel. 
 
@@ -478,7 +478,7 @@ The `src\pages\Dashboard\Examples\UserProfile` is the folder with Vue components
 
 | HTML | Laravel |
 | --- | --- |
-| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/thumb/opt_md_thumbnail.jpg)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=vmdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/thumb/opt_md_laravel_thumbnail.jpg)](https://material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme) |
+| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/96/thumb/argon-dashboard-2.jpg)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=vmdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/thumb/opt_md_laravel_thumbnail.jpg)](https://material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme) |
 
 | Vue | Vue & Laravel |
 | --- | --- |
@@ -776,7 +776,7 @@ At present, we officially aim to support the last two versions of the following 
 
 | HTML | Laravel |
 | --- | --- |
-| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/50/thumb/opt_md_thumbnail.jpg)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=vmdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/thumb/opt_md_laravel_thumbnail.jpg)](https://material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme) |
+| [![Material Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/96/thumb/argon-dashboard-2.jpg)](https://demos.creative-tim.com/material-dashboard/examples/dashboard.html?ref=vmdl-readme) | [![Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/154/thumb/opt_md_laravel_thumbnail.jpg)](https://material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme) |
 
 | Vue | Vue & Laravel |
 | --- | --- |
