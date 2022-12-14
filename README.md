@@ -10,6 +10,8 @@
 
 What if your frontend came not only with reusable components, but also with a reusable backend? API-driven development is more than just a buzzword and we partnered with [UPDIVISION](https://updivision.com) to prove it. Build awesome-looking apps with a flexible architecture across a variety of devices and operating systems with Vue Material Dashboard Laravel. 
 
+If you want to get more features, go PRO with [Vue Material Dashboard PRO Laravel](https://www.creative-tim.com/product/vue-material-dashboard-laravel-pro)
+
 # Download
 
 For the free version of the project you can either
