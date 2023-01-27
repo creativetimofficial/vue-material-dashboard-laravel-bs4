@@ -1,0 +1,23 @@
+language: php
+
+php:
+  - "7.2.5"
+  - "7.3"
+  - "7.4"
+
+before_script:
+  - curl -sS https://getcomposer.org/installer | php -- --filename=composer
+  - chmod +x composer
+  - composer install -n
+
+script:
+  - php vendor/bin/phpunit
+
+after_script:
+  - php vendor/bin/codacycoverage clover build/logs/clover.xml
+
+branches:
+  only:
+    - master
+    - 6.0
+    - 7.0
