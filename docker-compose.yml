@@ -10,7 +10,7 @@ services:
     image: travellist
     logging:
       driver: none
-    container_name: travellist-app
+    container_name: app
     restart: unless-stopped
     working_dir: /var/www/
     volumes:
@@ -21,7 +21,7 @@ services:
   #Nginx Service
   webserver:
     image: nginx:latest
-    container_name: webserver
+    container_name: server
     restart: unless-stopped
     tty: true
     logging:
@@ -39,9 +39,9 @@ services:
       - travellist
 
   #MySQL Service
-  db:
+  database:
     image: mysql:8.0.20
-    container_name: db
+    container_name: database
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     tty: true
@@ -50,8 +50,8 @@ services:
     ports:
       - "3309:3306"
     environment:
-      MYSQL_DATABASE: booker
-      MYSQL_ROOT_PASSWORD: booker
+      MYSQL_DATABASE: beauty-love
+      MYSQL_ROOT_PASSWORD: beautylove
       SERVICE_TAGS: dev
       SERVICE_NAME: mysql
     volumes:
@@ -62,7 +62,7 @@ services:
 
   npm:
     image: node:14
-    container_name: npm
+    container_name: node
     tty: true
     logging:
       driver: none

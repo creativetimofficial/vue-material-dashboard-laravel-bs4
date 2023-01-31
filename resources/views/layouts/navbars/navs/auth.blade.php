@@ -24,10 +24,6 @@
                         <i class="ni ni-single-02"></i>
                         <span>{{ __('Perfil') }}</span>
                     </a>
-                    <a href="{{ route('settings.show') }}" class="dropdown-item">
-                        <i class="ni ni-settings-gear-65"></i>
-                        <span>{{__('Configurações')}}</span>
-                    </a>
                     <div class="dropdown-divider"></div>
                     <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">

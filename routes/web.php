@@ -49,4 +49,7 @@ Route::group(['middleware' => 'auth'], function () {
     Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
     Route::resource('roles', 'RoleController');
 
+    //Client Routes
+    Route::get('/client', 'ClientsController@index');
+    Route::get('/client/dataTable', 'ClientsController@getClients');
  });
