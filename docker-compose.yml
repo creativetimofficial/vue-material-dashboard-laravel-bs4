@@ -1,0 +1,94 @@
+version: "3.7"
+services:
+  app:
+    build:
+      args:
+        user: www
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    image: travellist
+    logging:
+      driver: none
+    container_name: app
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./:/var/www
+    networks:
+      - travellist
+
+  #Nginx Service
+  webserver:
+    image: nginx:latest
+    container_name: server
+    restart: unless-stopped
+    tty: true
+    logging:
+      driver: none
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./:/var/www
+      - ./nginx/conf.d/:/etc/nginx/conf.d/
+      - ./nginx/ssl/:/etc/nginx/ssl/
+      - ./nginx/log/:/var/log/nginx/
+
+    networks:
+      - travellist
+
+  #MySQL Service
+  database:
+    image: mysql:8.0.20
+    container_name: database
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    tty: true
+    logging:
+      driver: none
+    ports:
+      - "3309:3306"
+    environment:
+      MYSQL_DATABASE: beauty-love
+      MYSQL_ROOT_PASSWORD: beautylove
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - dbdata:/var/lib/mysql/
+      - ./mysql/my.cnf:/etc/mysql/my.cnf
+    networks:
+      - travellist
+
+  npm:
+    image: node:14
+    container_name: node
+    tty: true
+    logging:
+      driver: none
+    volumes:
+      - ./:/var/www
+    ports:
+      - 3000:3000
+      - 3001:3001
+    working_dir: /var/www
+    networks:
+      - travellist
+
+  redis:
+    image: redis
+    logging:
+      driver: none
+    ports:
+      - "6389:6389"
+    networks:
+      - travellist
+
+#Docker Networks
+networks:
+  travellist:
+    driver: bridge
+#Volumes
+volumes:
+  dbdata:
+    driver: local

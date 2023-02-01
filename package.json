@@ -1,0 +1,40 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "watch-poll": "npm run watch -- --watch-poll",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --disable-host-check --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "devDependencies": {
+        "axios": "^0.19",
+        "bootstrap": "^4.6.2",
+        "cross-env": "^7.0.3",
+        "jquery": "^3.6.1",
+        "laravel-mix": "^5.0.9",
+        "lodash": "^4.17.21",
+        "popper.js": "^1.12",
+        "resolve-url-loader": "^2.3.1",
+        "sass": "^1.55.0",
+        "sass-loader": "^8.0.0",
+        "vue": "^2.7.10",
+        "vue-template-compiler": "^2.7.10"
+    },
+    "dependencies": {
+        "chart.js": "^3.9.1",
+        "jquery-validation": "^1.19.5",
+        "laravel-vue-datatable": "^0.5.14",
+        "luxon": "^1.26.0",
+        "ng2-charts": "^2.4.3",
+        "nodemon": "^2.0.20",
+        "sweetalert2": "^10.15.5",
+        "v-calendar": "^1.0.8",
+        "v-mask": "^2.3.0",
+        "vue-chartjs": "^4.1.2",
+        "vue-csv-import": "^3.3.10",
+        "vue-multiselect": "^2.1.6"
+    }
+}
