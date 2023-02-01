@@ -57,7 +57,7 @@ class ClientsController extends Controller
         return $client->delete();
     }
 
-    public function update(ClientsRequest $request, Clients $client)
+    public function update(Request $request, Clients $client)
     {
         // Create the user
         $client->update(

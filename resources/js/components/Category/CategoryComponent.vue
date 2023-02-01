@@ -4,12 +4,12 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h1 class="float-left">Consultar Clientes</h1>
+                    <h1 class="float-left">Consultar Categorias</h1>
                 </div>
 
                 <div class="card-body">
                         <data-table
-                        url="/clients/dataTable"
+                        url="/categories/dataTable"
                         :columns="columns"
                         >
                         </data-table>
@@ -35,11 +35,6 @@
                 {
                     label: 'name',
                     name: 'name',
-                    orderable: true,
-                },
-                {
-                    label: 'E-mail',
-                    name: 'email',
                     orderable: true,
                 },
                 {

@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\categoriesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,9 +25,16 @@ Route::middleware('auth')->get('/user', function (Request $request) {
 });
 
 Route::middleware('auth:api')->group(function () {
+    Route::post('/categories', 'CategoriesController@store')->name('categories.store.api');
+    Route::get('/categories/{category}', 'CategoriesController@show')->name('categories.show.api');
+    Route::get('/categories', 'CategoriesController@getCategoriesJson')->name('categories.index.api');
+    Route::put('/categories/{category}', 'CategoriesController@update')->name('categories.update.api');
+    Route::delete('/categories/{category}', 'CategoriesController@delete')->name('categories.delete.api');
+    
+    
     Route::post('/clients', 'ClientsController@store')->name('client.store.api');
     Route::get('/clients/{client}', 'ClientsController@show')->name('client.show.api');
     Route::get('/clients', 'ClientsController@getClientsJson')->name('client.index.api');
-    Route::delete('/clients/{client}', 'ClientsController@delete')->name('client.delete.api');
     Route::put('/clients/{client}', 'ClientsController@update')->name('client.update.api');
+    Route::delete('/clients/{client}', 'ClientsController@delete')->name('client.delete.api');
 });
