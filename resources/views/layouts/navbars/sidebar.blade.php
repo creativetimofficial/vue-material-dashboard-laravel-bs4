@@ -105,7 +105,16 @@
                         </ul>
                     </div>
                 </li>
-
+                <li class="nav-item">
+                    <a class="nav-link" href="/clients">
+                        <i class="ni ni-circle-08" style="color:#4B4A67;"></i> {{ __('Gerenciar Clientes') }}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/categories">
+                        <i class="ni ni-ungroup" style="color:#4B4A67;"></i> {{ __('Gerenciar Categorias') }}
+                    </a>
+                </li>
                
                 @can('view layouts')
                 <li class="nav-item">

@@ -50,6 +50,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('roles', 'RoleController');
 
     //Client Routes
-    Route::get('/client', 'ClientsController@index');
-    Route::get('/client/dataTable', 'ClientsController@getClients');
+    Route::get('/clients', 'ClientsController@index');
+    Route::get('/clients/dataTable', 'ClientsController@getClients');
+
+    Route::get('/categories', 'CategoriesController@index');
+    Route::get('/categories/dataTable', 'CategoriesController@getCategories');
  });
