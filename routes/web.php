@@ -53,6 +53,12 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/clients', 'ClientsController@index');
     Route::get('/clients/dataTable', 'ClientsController@getClients');
 
+    // Categories Routes
+    Route::post('/categories', 'CategoriesController@store');
     Route::get('/categories', 'CategoriesController@index');
     Route::get('/categories/dataTable', 'CategoriesController@getCategories');
+    Route::get('/categories/{category}', 'CategoriesController@edit');
+    Route::get('/categories/create', 'CategoriesController@create');
+    Route::put('/categories/{category}', 'CategoriesController@update');
+    Route::delete('/categories/{category}', 'CategoriesController@delete');
  });

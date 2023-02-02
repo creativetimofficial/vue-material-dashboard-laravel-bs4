@@ -8,12 +8,13 @@ use JamesDordoy\LaravelVueDatatable\Http\Resources\DataTableCollectionResource;
 use App\Http\Requests\CategoriesRequest;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Resources\Categories as CategoriesResource;
+use PhpOffice\PhpSpreadsheet\Calculation\Category;
 
 class CategoriesController extends Controller
 {
     public function index()
     {
-        return view('Categories.index');
+        return view('categories.index');
     }
 
     public function show(Categories $category) {
@@ -37,11 +38,24 @@ class CategoriesController extends Controller
         return new DataTableCollectionResource($data);
     }
 
-    public function store(CategoriesRequest $request)
+    public function create()
     {
-        $request = $request->validated();
+        return view('categories.create');
+    }
+
+    public function edit(Categories $category)
+    {
+        return view('categories.edit')->with('category', $category);
+    }
+
+    public function store(Request $request)
+    {
+        $request = $request->all();
         Categories::create($request);
 
+        if (array_key_exists('redirect', $request) && $request['redirect']) {
+            return redirect('/categories');
+        }
         return json_encode([
             "code" => 200,
             "message" => "Success"
@@ -56,7 +70,9 @@ class CategoriesController extends Controller
     {
         $request = request()->all();
         $category->update($request);
-
+        if (array_key_exists('redirect', $request) && $request['redirect']) {
+            return redirect('/categories');
+        }
         return json_encode([
             "code" => 200,
             "message" => "Success"
