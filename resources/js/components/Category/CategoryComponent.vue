@@ -5,6 +5,9 @@
             <div class="card">
                 <div class="card-header">
                     <h1 class="float-left">Consultar Categorias</h1>
+                    <div class="float-right">
+                        <a href="/categories/create" class="btn btn-success align-right">Adicionar Novo</a>
+                    </div>
                 </div>
 
                 <div class="card-body">
@@ -22,6 +25,9 @@
 </template>
 
 <script>
+import Swal from 'sweetalert2/dist/sweetalert2.js'
+import ButtonComponent from "../ButtonComponent.vue";
+import 'sweetalert2/src/sweetalert2.scss'
     export default{
     
     data() {
@@ -49,21 +55,38 @@
                     orderable: true,
                     transform: ({data, name}) => this.formatDate(data[name])
                 },
-                // {
-                // label: '',
-                // name: 'View',
-                // orderable: false,
-                // classes: {
-                //     'btn': true,
-                //     'btn-primary': true,
-                //     'btn-sm': true,
-                // },
-                // event: "click",
-                // handler: this.displayRow,
-                // component: ButtonComponent,
-            	// },
+                {
+                label: '',
+                name: 'Excluir',
+                orderable: false,
+                classes: {
+                    'btn': true,
+                    'btn-danger': true,
+                    'btn-sm': true,
+                },
+                event: "click",
+                handler: this.deleteCategory,
+                component: ButtonComponent,
+            	},
+                {
+                label: '',
+                name: 'Editar',
+                orderable: false,
+                classes: {
+                    'btn': true,
+                    'btn-info': true,
+                    'btn-sm': true,
+                },
+                event: "click",
+                handler: this.editCategory,
+                component: ButtonComponent,
+            	},
             ]
         }
+    },
+    components: {
+        // eslint-disable-next-line
+        ButtonComponent,
     },
     methods: {
         formatDate(data){
@@ -72,6 +95,31 @@
             const miliHour = dataSplit1[1].split(".");
             const hour = miliHour[0];
             return date +"  "+ hour;
+        },
+        deleteCategory(data) {
+            axios.delete('/categories/' + data.id)
+            .then( response=> {
+                this.alert('Categoria excluída com sucesso!', 'success', 1200);
+                setTimeout(() => {  location.reload(); }, 1300);
+                
+            }).catch(error => {
+                this.alert('Erro ao excluir Categoria', 'error', 1200)
+                console.log(error)
+            });
+        },
+        alert(message, icon, time) {
+            Swal.fire({
+                position: 'top-end',
+                title: message,
+                icon: icon,
+                timer: time,
+                toast: true,
+                showConfirmButton: false
+            })
+        },
+
+        editCategory(data) {
+            window.location.href = `/categories/${data.id}`
         },
     }
     
