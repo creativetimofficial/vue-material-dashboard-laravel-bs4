@@ -115,6 +115,11 @@
                         <i class="ni ni-ungroup" style="color:#4B4A67;"></i> {{ __('Gerenciar Categorias') }}
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/brands">
+                        <i class="ni ni-shop" style="color:#4B4A67;"></i> {{ __('Gerenciar Marcas') }}
+                    </a>
+                </li>
                
                 @can('view layouts')
                 <li class="nav-item">
