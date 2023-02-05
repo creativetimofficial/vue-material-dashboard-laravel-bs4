@@ -30,6 +30,13 @@ Route::middleware('auth:api')->group(function () {
     Route::get('/categories', 'CategoriesController@getCategoriesJson')->name('categories.index.api');
     Route::put('/categories/{category}', 'CategoriesController@update')->name('categories.update.api');
     Route::delete('/categories/{category}', 'CategoriesController@delete')->name('categories.delete.api');
+
+
+    Route::post('/brands', 'BrandsController@store')->name('brands.store.api');
+    Route::get('/brands/{brand}', 'BrandsController@show')->name('brands.show.api');
+    Route::get('/brands', 'BrandsController@getbrandsJson')->name('brands.index.api');
+    Route::put('/brands/{brand}', 'BrandsController@update')->name('brands.update.api');
+    Route::delete('/brands/{brand}', 'BrandsController@delete')->name('brands.delete.api');
     
     
     Route::post('/clients', 'ClientsController@store')->name('client.store.api');

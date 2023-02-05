@@ -61,4 +61,14 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/categories/create', 'CategoriesController@create');
     Route::put('/categories/{category}', 'CategoriesController@update');
     Route::delete('/categories/{category}', 'CategoriesController@delete');
+
+
+    // Brands Routes
+    Route::get('/brands/create', 'BrandsController@create');
+    Route::post('/brands', 'BrandsController@store');
+    Route::get('/brands', 'BrandsController@index');
+    Route::get('/brands/dataTable', 'BrandsController@getbrands');
+    Route::get('/brands/{brand}', 'BrandsController@edit');
+    Route::put('/brands/{brand}', 'BrandsController@update');
+    Route::delete('/brands/{brand}', 'BrandsController@delete');
  });
