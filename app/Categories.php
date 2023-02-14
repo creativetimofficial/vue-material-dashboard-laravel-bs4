@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Products;
 use Illuminate\Database\Eloquent\Model;
 use JamesDordoy\LaravelVueDatatable\Traits\LaravelVueDatatableTrait;
 
@@ -25,4 +26,9 @@ class Categories extends Model
             'searchable' => true,
         ]
     ];
+
+    public function products()
+    {
+        return $this->hasMany(Products::class);
+    }
 }
