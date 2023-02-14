@@ -2,15 +2,14 @@
 
 namespace App;
 
-use App\Products;
 use Illuminate\Database\Eloquent\Model;
 use JamesDordoy\LaravelVueDatatable\Traits\LaravelVueDatatableTrait;
 
-class Brands extends Model
+class Products extends Model
 {
     use LaravelVueDatatableTrait;
 
-    protected $fillable = ['name', 'description', 'url_image_path'];
+    protected $fillable = ['name', 'description', 'categories_id', 'brands_id', 'price', 'image_url', 'product_url'];
 
     protected $dataTableColumns = [
         'id' => [
@@ -22,6 +21,9 @@ class Brands extends Model
         'description' => [
             'searchable' => true,
         ],
+        'price' => [
+            'searchable' => true,
+        ],
         'created_at' => [
             'searchable' => true,
         ],
@@ -30,8 +32,13 @@ class Brands extends Model
         ]
     ];
 
-    public function products()
+    public function categories()
     {
-        return $this->hasMany(Products::class);
+        return $this->belongsTo('App\Categories');
+    }
+
+    public function brands()
+    {
+        return $this->belongsTo('App\Brands');
     }
 }
