@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'AdminPermissionsSeeder' => $baseDir . '/database/seeds/AdminPermissionsSeeder.php',
+    'App\\Brands' => $baseDir . '/app/Brands.php',
     'App\\Categories' => $baseDir . '/app/Categories.php',
     'App\\Clients' => $baseDir . '/app/Clients.php',
     'App\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
@@ -17,6 +18,7 @@ return array(
     'App\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
     'App\\Http\\Controllers\\Auth\\ResetPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ResetPasswordController.php',
     'App\\Http\\Controllers\\Auth\\VerificationController' => $baseDir . '/app/Http/Controllers/Auth/VerificationController.php',
+    'App\\Http\\Controllers\\BrandsController' => $baseDir . '/app/Http/Controllers/BrandsController.php',
     'App\\Http\\Controllers\\CategoriesController' => $baseDir . '/app/Http/Controllers/CategoriesController.php',
     'App\\Http\\Controllers\\ClientsController' => $baseDir . '/app/Http/Controllers/ClientsController.php',
     'App\\Http\\Controllers\\Controller' => $baseDir . '/app/Http/Controllers/Controller.php',
@@ -35,10 +37,12 @@ return array(
     'App\\Http\\Middleware\\TrustHosts' => $baseDir . '/app/Http/Middleware/TrustHosts.php',
     'App\\Http\\Middleware\\TrustProxies' => $baseDir . '/app/Http/Middleware/TrustProxies.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
+    'App\\Http\\Requests\\BrandsRequest' => $baseDir . '/app/Http/Requests/BrandsRequest.php',
     'App\\Http\\Requests\\CategoriesRequest' => $baseDir . '/app/Http/Requests/CategoriesRequest.php',
     'App\\Http\\Requests\\ClientsRequest' => $baseDir . '/app/Http/Requests/ClientsRequest.php',
     'App\\Http\\Requests\\ProfileRequest' => $baseDir . '/app/Http/Requests/ProfileRequest.php',
     'App\\Http\\Requests\\UserRequest' => $baseDir . '/app/Http/Requests/UserRequest.php',
+    'App\\Http\\Resources\\Brands' => $baseDir . '/app/Http/Resources/Brands.php',
     'App\\Http\\Resources\\Categories' => $baseDir . '/app/Http/Resources/Categories.php',
     'App\\Http\\Resources\\Clients' => $baseDir . '/app/Http/Resources/Clients.php',
     'App\\Permission' => $baseDir . '/app/Permission.php',

@@ -71,4 +71,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/brands/{brand}', 'BrandsController@edit');
     Route::put('/brands/{brand}', 'BrandsController@update');
     Route::delete('/brands/{brand}', 'BrandsController@delete');
+
+
+    Route::get('/products', 'ProductsController@index');
+    Route::get('/products/dataTable', 'ProductsController@getProducts');
+    Route::get('/products/{product}', 'ProductsController@edit');
+    Route::put('/products/{product}', 'ProductsController@update');
+    Route::delete('/products/{product}', 'ProductsController@delete');
  });
