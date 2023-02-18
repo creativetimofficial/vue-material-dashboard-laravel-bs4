@@ -683,6 +683,7 @@ class ComposerStaticInit5f2a09405209eac981a87671df585058
 
     public static $classMap = array (
         'AdminPermissionsSeeder' => __DIR__ . '/../..' . '/database/seeds/AdminPermissionsSeeder.php',
+        'App\\Brands' => __DIR__ . '/../..' . '/app/Brands.php',
         'App\\Categories' => __DIR__ . '/../..' . '/app/Categories.php',
         'App\\Clients' => __DIR__ . '/../..' . '/app/Clients.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
@@ -693,6 +694,7 @@ class ComposerStaticInit5f2a09405209eac981a87671df585058
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
+        'App\\Http\\Controllers\\BrandsController' => __DIR__ . '/../..' . '/app/Http/Controllers/BrandsController.php',
         'App\\Http\\Controllers\\CategoriesController' => __DIR__ . '/../..' . '/app/Http/Controllers/CategoriesController.php',
         'App\\Http\\Controllers\\ClientsController' => __DIR__ . '/../..' . '/app/Http/Controllers/ClientsController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
@@ -711,10 +713,12 @@ class ComposerStaticInit5f2a09405209eac981a87671df585058
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Http\\Requests\\BrandsRequest' => __DIR__ . '/../..' . '/app/Http/Requests/BrandsRequest.php',
         'App\\Http\\Requests\\CategoriesRequest' => __DIR__ . '/../..' . '/app/Http/Requests/CategoriesRequest.php',
         'App\\Http\\Requests\\ClientsRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ClientsRequest.php',
         'App\\Http\\Requests\\ProfileRequest' => __DIR__ . '/../..' . '/app/Http/Requests/ProfileRequest.php',
         'App\\Http\\Requests\\UserRequest' => __DIR__ . '/../..' . '/app/Http/Requests/UserRequest.php',
+        'App\\Http\\Resources\\Brands' => __DIR__ . '/../..' . '/app/Http/Resources/Brands.php',
         'App\\Http\\Resources\\Categories' => __DIR__ . '/../..' . '/app/Http/Resources/Categories.php',
         'App\\Http\\Resources\\Clients' => __DIR__ . '/../..' . '/app/Http/Resources/Clients.php',
         'App\\Permission' => __DIR__ . '/../..' . '/app/Permission.php',

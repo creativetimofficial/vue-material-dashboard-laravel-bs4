@@ -2,7 +2,6 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\categoriesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,6 +24,12 @@ Route::middleware('auth')->get('/user', function (Request $request) {
 });
 
 Route::middleware('auth:api')->group(function () {
+    Route::post('/products', 'ProductsController@store')->name('products.store.api');
+    Route::get('/products/{product}', 'ProductsController@show')->name('products.show.api');
+    Route::get('/products', 'ProductsController@getProductsJson')->name('products.index.api');
+    Route::put('/products/{product}', 'ProductsController@update')->name('products.update.api');
+    Route::delete('/products/{product}', 'ProductsController@delete')->name('products.delete.api');
+
     Route::post('/categories', 'CategoriesController@store')->name('categories.store.api');
     Route::get('/categories/{category}', 'CategoriesController@show')->name('categories.show.api');
     Route::get('/categories', 'CategoriesController@getCategoriesJson')->name('categories.index.api');
