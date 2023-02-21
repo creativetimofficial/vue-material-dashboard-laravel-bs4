@@ -74,6 +74,8 @@ Route::group(['middleware' => 'auth'], function () {
 
 
     Route::get('/products', 'ProductsController@index');
+    Route::post('/products', 'ProductsController@store');
+    Route::get('/products/create', 'ProductsController@create');
     Route::get('/products/dataTable', 'ProductsController@getProducts');
     Route::get('/products/{product}', 'ProductsController@edit');
     Route::put('/products/{product}', 'ProductsController@update');

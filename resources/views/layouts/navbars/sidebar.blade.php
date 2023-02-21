@@ -6,7 +6,7 @@
         </button>
         <!-- Brand -->
         <a class="navbar-brand pt-10" href="{{ route('dashboard.index') }}">
-            <img src="{{ asset('argon') }}/img/brand/logop.png" width="100" class="navbar-brand-img" alt="...">
+        <img src="{{ asset('argon') }}/img/brand/blue.png" width="100" class="navbar-brand-img" alt="..." />
         </a>
         <!-- User -->
         <ul class="nav align-items-center d-md-none">
@@ -120,7 +120,11 @@
                         <i class="ni ni-shop" style="color:#4B4A67;"></i> {{ __('Gerenciar Marcas') }}
                     </a>
                 </li>
-               
+                <li class="nav-item">
+                    <a class="nav-link" href="/brands">
+                        <i class="ni ni-basket" style="color:#4B4A67;"></i> {{ __('Gerenciar Produtos') }}
+                    </a>
+                </li>
                 @can('view layouts')
                 <li class="nav-item">
                     <a target="_blank" class="nav-link" href="/horizon" role="button" aria-controls="navbar-hotel">

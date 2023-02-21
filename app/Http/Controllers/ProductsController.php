@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Products;
 use Illuminate\Http\Request;
 use App\Http\Requests\ProductsRequest;
+use App\Brands;
+use App\Categories;
 use App\Http\Resources\Products as ProductsResource;
 use JamesDordoy\LaravelVueDatatable\Http\Resources\DataTableCollectionResource;
 
@@ -13,6 +15,13 @@ class ProductsController extends Controller
     public function index()
     {
         return view('products.index');
+    }
+
+    public function create()
+    {
+        $brands = Brands::all();
+        $categories = Categories::all();
+        return view('products.create', compact('brands', 'categories'));
     }
 
     public function show(Products $product) {
@@ -63,7 +72,7 @@ class ProductsController extends Controller
         $request = request()->all();
         $product->update($request);
         if (array_key_exists('redirect', $request) && $request['redirect']) {
-            return redirect('/categories');
+            return redirect('/products');
         }
         return json_encode([
             "code" => 200,
@@ -73,6 +82,8 @@ class ProductsController extends Controller
 
     public function edit(Products $product)
     {
-        return view('products.edit')->with('product', $product);
+        $brands = Brands::all();
+        $categories = Categories::all();
+        return view('products.edit', compact('brands', 'categories'))->with('product', $product);
     }
 }
