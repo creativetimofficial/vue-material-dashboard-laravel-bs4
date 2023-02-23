@@ -121,7 +121,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/brands">
+                    <a class="nav-link" href="/products">
                         <i class="ni ni-basket" style="color:#4B4A67;"></i> {{ __('Gerenciar Produtos') }}
                     </a>
                 </li>

@@ -49,4 +49,10 @@ Route::middleware('auth:api')->group(function () {
     Route::get('/clients', 'ClientsController@getClientsJson')->name('client.index.api');
     Route::put('/clients/{client}', 'ClientsController@update')->name('client.update.api');
     Route::delete('/clients/{client}', 'ClientsController@delete')->name('client.delete.api');
+
+    Route::post('/comments', 'CommentsController@store')->name('comment.store.api');
+    Route::get('/comments/{comment}', 'CommentsController@show')->name('comment.show.api');
+    Route::get('/comments', 'CommentsController@getCommentsJson')->name('comment.index.api');
+    Route::put('/comments/{comment}', 'CommentsController@update')->name('comment.update.api');
+    Route::delete('/comments/{comment}', 'CommentsController@delete')->name('client.delete.api');
 });

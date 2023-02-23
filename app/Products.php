@@ -41,4 +41,9 @@ class Products extends Model
     {
         return $this->belongsTo('App\Brands');
     }
+
+    public function comments()
+    {
+        return $this->hasMany('App\Comments');
+    }
 }
