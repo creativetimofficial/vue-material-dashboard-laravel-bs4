@@ -5,20 +5,23 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use JamesDordoy\LaravelVueDatatable\Traits\LaravelVueDatatableTrait;
 
-class Clients extends Model
+class Comments extends Model
 {
     use LaravelVueDatatableTrait;
 
-    protected $fillable = ['name', 'email', 'email_verified_at', 'password'];
+    protected $fillable = ['clients_id', 'products_id', 'title', 'description', 'status', 'rate'];
 
     protected $dataTableColumns = [
         'id' => [
             'searchable' => true,
         ],
-        'name' => [
+        'clients_id' => [
             'searchable' => true,
         ],
-        'email' => [
+        'title' => [
+            'searchable' => true,
+        ],
+        'products_id' => [
             'searchable' => true,
         ],
         'created_at' => [
@@ -29,8 +32,14 @@ class Clients extends Model
         ]
     ];
 
-    public function comments()
+    public function products()
     {
-        return $this->hasMany('App\Comments');
+        return $this->belongsTo('App\Products');
     }
+
+    public function clients()
+    {
+        return $this->belongsTo('App\Clients');
+    }
+
 }
