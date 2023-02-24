@@ -18,10 +18,16 @@ class Comments extends Model
         'clients_id' => [
             'searchable' => true,
         ],
+        'products_id' => [
+            'searchable' => true,
+        ],
         'title' => [
             'searchable' => true,
         ],
-        'products_id' => [
+        'rate' => [
+            'searchable' => true,
+        ],
+        'status' => [
             'searchable' => true,
         ],
         'created_at' => [

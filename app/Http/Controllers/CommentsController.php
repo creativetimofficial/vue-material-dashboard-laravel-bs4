@@ -67,4 +67,21 @@ class CommentsController extends Controller
             "message" => "Success"
         ]);
     }
+
+    public function turnStatusComment(Comments $comment, Request $request) {
+        try {
+            $request = $request->all();
+            $comment->status = $request['status'];
+            $comment->save();
+            return json_encode([
+                "code" => 200,
+                "message" => "Success"
+            ]);
+        } catch (\Throwable $th) {
+            return json_encode([
+                "code" => 403,
+                "message" => "Error to update comment."
+            ]);
+        }
+    }
 }

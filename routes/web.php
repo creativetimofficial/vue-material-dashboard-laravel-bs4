@@ -53,6 +53,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/clients', 'ClientsController@index');
     Route::get('/clients/dataTable', 'ClientsController@getClients');
 
+     //Comments Routes
+     Route::get('/comments', 'CommentsController@index');
+     Route::get('/comments/dataTable', 'CommentsController@getComments');
+     Route::put('/comments/disable/{comment}', 'CommentsController@turnStatusComment');
+
     // Categories Routes
     Route::get('/categories/create', 'CategoriesController@create');
     Route::post('/categories', 'CategoriesController@store');
