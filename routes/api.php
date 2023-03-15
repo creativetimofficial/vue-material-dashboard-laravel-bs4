@@ -1,0 +1,58 @@
+<?php
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+
+/*
+|--------------------------------------------------------------------------
+| API Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register API routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| is assigned the "api" middleware group. Enjoy building your API!
+|
+*/
+
+//Permissions
+Route::group(['middleware' => ['auth']], function() {
+    Route::resource('roles','RoleController');
+    Route::resource('users','UserController');
+});
+Route::middleware('auth')->get('/user', function (Request $request) {
+    return $request->user();
+});
+
+Route::middleware('auth:api')->group(function () {
+    Route::post('/products', 'ProductsController@store')->name('products.store.api');
+    Route::get('/products/{product}', 'ProductsController@show')->name('products.show.api');
+    Route::get('/products', 'ProductsController@getProductsJson')->name('products.index.api');
+    Route::put('/products/{product}', 'ProductsController@update')->name('products.update.api');
+    Route::delete('/products/{product}', 'ProductsController@delete')->name('products.delete.api');
+
+    Route::post('/categories', 'CategoriesController@store')->name('categories.store.api');
+    Route::get('/categories/{category}', 'CategoriesController@show')->name('categories.show.api');
+    Route::get('/categories', 'CategoriesController@getCategoriesJson')->name('categories.index.api');
+    Route::put('/categories/{category}', 'CategoriesController@update')->name('categories.update.api');
+    Route::delete('/categories/{category}', 'CategoriesController@delete')->name('categories.delete.api');
+
+
+    Route::post('/brands', 'BrandsController@store')->name('brands.store.api');
+    Route::get('/brands/{brand}', 'BrandsController@show')->name('brands.show.api');
+    Route::get('/brands', 'BrandsController@getbrandsJson')->name('brands.index.api');
+    Route::put('/brands/{brand}', 'BrandsController@update')->name('brands.update.api');
+    Route::delete('/brands/{brand}', 'BrandsController@delete')->name('brands.delete.api');
+    
+    
+    Route::post('/clients', 'ClientsController@store')->name('client.store.api');
+    Route::get('/clients/{client}', 'ClientsController@show')->name('client.show.api');
+    Route::get('/clients', 'ClientsController@getClientsJson')->name('client.index.api');
+    Route::put('/clients/{client}', 'ClientsController@update')->name('client.update.api');
+    Route::delete('/clients/{client}', 'ClientsController@delete')->name('client.delete.api');
+
+    Route::post('/comments', 'CommentsController@store')->name('comment.store.api');
+    Route::get('/comments/{comment}', 'CommentsController@show')->name('comment.show.api');
+    Route::get('/comments', 'CommentsController@getCommentsJson')->name('comment.index.api');
+    Route::put('/comments/{comment}', 'CommentsController@update')->name('comment.update.api');
+    Route::delete('/comments/{comment}', 'CommentsController@delete')->name('client.delete.api');
+});
