@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\BrandPriceLinkProducts;
 use Illuminate\Database\Eloquent\Model;
 use JamesDordoy\LaravelVueDatatable\Traits\LaravelVueDatatableTrait;
 
@@ -34,12 +35,12 @@ class Products extends Model
 
     public function categories()
     {
-        return $this->belongsTo('App\Categories');
+        return $this->hasMany('App\Categories');
     }
 
-    public function brands()
+    public function brandPriceLinkProducts()
     {
-        return $this->belongsTo('App\Brands');
+        return $this->hasMany(BrandPriceLinkProducts::class);
     }
 
     public function comments()

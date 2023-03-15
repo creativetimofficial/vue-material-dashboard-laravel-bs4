@@ -85,4 +85,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/products/{product}', 'ProductsController@edit');
     Route::put('/products/{product}', 'ProductsController@update');
     Route::delete('/products/{product}', 'ProductsController@delete');
+
+    Route::post('/products/sendCsvProducts', 'ProductsController@sendCsvProducts');
  });

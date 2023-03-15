@@ -3,6 +3,7 @@
 namespace App;
 
 use App\Products;
+use App\BrandPriceLinkProducts;
 use Illuminate\Database\Eloquent\Model;
 use JamesDordoy\LaravelVueDatatable\Traits\LaravelVueDatatableTrait;
 
@@ -30,8 +31,8 @@ class Brands extends Model
         ]
     ];
 
-    public function products()
+    public function brandPriceLinkProducts()
     {
-        return $this->hasMany(Products::class);
+        return $this->hasMany(BrandPriceLinkProducts::class);
     }
 }

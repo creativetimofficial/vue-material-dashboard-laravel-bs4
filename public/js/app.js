@@ -2974,6 +2974,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -3040,7 +3061,8 @@ __webpack_require__.r(__webpack_exports__);
         event: "click",
         handler: this.editProduct,
         component: _ButtonComponent_vue__WEBPACK_IMPORTED_MODULE_1__["default"]
-      }]
+      }],
+      file: ""
     };
   },
   components: {
@@ -3069,6 +3091,37 @@ __webpack_require__.r(__webpack_exports__);
 
         console.log(error);
       });
+    },
+    sendProductCsv: function sendProductCsv() {
+      $("#ImportProductCsv").modal();
+    },
+    routeSendCsv: function routeSendCsv() {
+      var _this3 = this;
+
+      this.showLoading('sendCsv', 'spinnerInsertCsv');
+      var formData = new FormData();
+      formData.append('file', this.file);
+      axios.post('/products/sendCsvProducts', formData).then(function (response) {
+        _this3.alert('Template importado com sucesso!', 'success', 1200);
+
+        _this3.hideLoading('sendCsv', 'spinnerInsertCsv');
+      })["catch"](function (error) {
+        _this3.alert('Não foi possível importar template.', 'error', 2000);
+
+        _this3.hideLoading('sendCsv', 'spinnerInsertCsv');
+      });
+      $("#ImportHotelCsv").modal('hide');
+    },
+    onFileChange: function onFileChange(e) {
+      this.file = e.target.files[0];
+    },
+    showLoading: function showLoading(idButton, idSpinner) {
+      document.getElementById(idSpinner).style.display = "block";
+      document.getElementById(idButton).disabled = true;
+    },
+    hideLoading: function hideLoading(idButton, idSpinner) {
+      document.getElementById(idButton).disabled = false;
+      document.getElementById(idSpinner).style.display = "none";
     },
     alert: function alert(message, icon, time) {
       sweetalert2_dist_sweetalert2_js__WEBPACK_IMPORTED_MODULE_0___default.a.fire({
@@ -61725,10 +61778,79 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container-fluid mt--7" }, [
+    _c(
+      "div",
+      {
+        staticClass: "modal fade",
+        attrs: { id: "ImportProductCsv", role: "dialog" }
+      },
+      [
+        _c("div", { staticClass: "modal-dialog" }, [
+          _c("div", { staticClass: "modal-content" }, [
+            _vm._m(0),
+            _vm._v(" "),
+            _c(
+              "form",
+              {
+                staticClass: "d-inline hidden-edit-form",
+                attrs: { method: "put" },
+                on: {
+                  submit: function($event) {
+                    $event.preventDefault()
+                    return _vm.routeSendCsv.apply(null, arguments)
+                  }
+                }
+              },
+              [
+                _c("input", {
+                  attrs: { type: "hidden", name: "_token" },
+                  domProps: { value: _vm.csrf }
+                }),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group csv-import-file" }, [
+                  _c("input", {
+                    staticClass: "form-control-file",
+                    attrs: { type: "file", name: "csv" },
+                    on: { change: _vm.onFileChange }
+                  })
+                ]),
+                _vm._v(" "),
+                _vm._m(1)
+              ]
+            )
+          ])
+        ])
+      ]
+    ),
+    _vm._v(" "),
     _c("div", { staticClass: "row justify-content-center" }, [
       _c("div", { staticClass: "col-md-12" }, [
         _c("div", { staticClass: "card" }, [
-          _vm._m(0),
+          _c("div", { staticClass: "card-header" }, [
+            _c("h1", { staticClass: "float-left" }, [
+              _vm._v("Consultar Produtos")
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "float-right" }, [
+              _c(
+                "a",
+                {
+                  staticClass: "btn btn-success align-right",
+                  attrs: { href: "/products/create" }
+                },
+                [_vm._v("Adicionar Novo")]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-success align-right",
+                  on: { click: _vm.sendProductCsv }
+                },
+                [_vm._v("Importar CSV")]
+              )
+            ])
+          ]),
           _vm._v(" "),
           _c(
             "div",
@@ -61750,19 +61872,40 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "card-header" }, [
-      _c("h1", { staticClass: "float-left" }, [_vm._v("Consultar Produtos")]),
+    return _c("div", { staticClass: "modal-header" }, [
+      _c("h4", { staticClass: "modal-title" }, [
+        _vm._v("Importar CSV de Produtos")
+      ]),
       _vm._v(" "),
-      _c("div", { staticClass: "float-right" }, [
-        _c(
-          "a",
-          {
-            staticClass: "btn btn-success align-right",
-            attrs: { href: "/products/create" }
-          },
-          [_vm._v("Adicionar Novo")]
-        )
-      ])
+      _c(
+        "button",
+        {
+          staticClass: "close",
+          attrs: { type: "button", "data-dismiss": "modal" }
+        },
+        [_vm._v("×")]
+      )
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "modal-footer d-flex flex-row mt--4" }, [
+      _c("div", {
+        staticClass: "loader mr-4",
+        staticStyle: { display: "none" },
+        attrs: { id: "spinnerInsertCsv" }
+      }),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass: "btn btn-sm btn-primary mt-2",
+          attrs: { type: "submit", id: "sendCsv" }
+        },
+        [_vm._v("Enviar CSV")]
+      )
     ])
   }
 ]

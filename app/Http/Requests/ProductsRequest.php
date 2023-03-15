@@ -15,12 +15,10 @@ class ProductsRequest extends FormRequest
     {
         return [
             'name' => 'required|min:3',
-            'description' => 'required',
-            'brands_id' => 'required|exists:brands,id',
-            'categories_id' => 'required|exists:categories,id',
+            'description' => 'nullable',
+            'categories_id' => 'nullable|exists:categories,id',
             'image_url' => 'required',
-            'products_url' => 'nullabel',
-            'price' => 'nullable',
+            'brands' => 'required'
         ];
     }
 

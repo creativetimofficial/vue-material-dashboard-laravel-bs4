@@ -2,6 +2,8 @@
 
 namespace App\Http\Resources;
 
+use App\BrandPriceLinkProducts as AppBrandPriceLinkProducts;
+use App\Http\Resources\BrandPriceLinkProducts;
 use Illuminate\Http\Resources\Json\JsonResource;
 
 class Products extends JsonResource
@@ -17,12 +19,10 @@ class Products extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
-            'brands_id' => $this->brands_id,
             'categories' => $this->categories_id,
             'description' => $this->description,
             'image_url' => $this->image_url,
-            'product_url' => $this->product_url,
-            'price' => $this->price,
+            'brand_price_link_products' => AppBrandPriceLinkProducts::where('products_id', '=', $this->id)->get(),
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at
         ];
