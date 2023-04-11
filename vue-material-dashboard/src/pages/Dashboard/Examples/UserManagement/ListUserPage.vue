@@ -6,7 +6,7 @@
           >Add, Edit, Delete features are not functional. This is a PRO feature!
           Click
           <a
-            href="https://www.creative-tim.com/live/vue-material-dashboard-laravel-pro"
+            href="https://www.creative-tim.com/live/vue-material-dashboard-laravel-pro-bs4"
             target="_blank"
             id="pro-feature"
             >here</a

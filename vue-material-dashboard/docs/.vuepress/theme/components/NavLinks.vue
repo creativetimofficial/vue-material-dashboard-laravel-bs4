@@ -22,12 +22,12 @@
     <div
       class="nav-item"
     >
-        <div class="nav-item"><a class="nav-link" href="https://www.creative-tim.com/product/vue-material-dashboard-laravel-pro" target="_blank"> <i class="material-icons">card_membership</i> Upgrade to PRO <div class="ripple-container"></div></a></div>
+        <div class="nav-item"><a class="nav-link" href="https://www.creative-tim.com/product/vue-material-dashboard-laravel-pro-bs4" target="_blank"> <i class="material-icons">card_membership</i> Upgrade to PRO <div class="ripple-container"></div></a></div>
         <div class="nav-item"><a href="https://explore.postman.com/api/6357/laravel-jsonapi" target="_blank" class="nav-link"><i class="material-icons">content_paste</i> Laravel API Documentation</a></div>
-        <div class="nav-item"><a href="https://vue-material-dashboard-laravel.creative-tim.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+        <div class="nav-item"><a href="https://vue-material-dashboard-laravel-bs4.creative-tim.com/" target="_blank" rel="noopener noreferrer" class="nav-link external">
             <i class="material-icons">view_carousel</i> Live Preview</a>
         </div>
-        <div class="nav-item"><a href="https://github.com/creativetimofficial/vue-material-dashboard-laravel" target="_blank" rel="noopener noreferrer" class="nav-link external">
+        <div class="nav-item"><a href="https://github.com/creativetimofficial/vue-material-dashboard-laravel-bs4" target="_blank" rel="noopener noreferrer" class="nav-link external">
             <i class="material-icons">star</i> Help with a star</a>
         </div>
     </div>

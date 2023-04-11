@@ -20,7 +20,7 @@
     <nav class="nav-links">
       <a
         class="nav-link p-2"
-        href="https://github.com/creativetimofficial/vue-material-dashboard-laravel"
+        href="https://github.com/creativetimofficial/vue-material-dashboard-laravel-bs4"
         target="_blank"
         rel="noopener"
         aria-label="GitHub"

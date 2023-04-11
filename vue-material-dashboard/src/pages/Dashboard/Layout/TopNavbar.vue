@@ -116,9 +116,9 @@ export default {
         "Kevin Malone",
       ],
       documentationLink:
-        "https://vue-material-dashboard-laravel.creative-tim.com/documentation/",
+        "https://vue-material-dashboard-laravel-bs4.creative-tim.com/documentation/",
       downloadUrl:
-        "https://www.creative-tim.com/product/vue-material-dashboard-laravel",
+        "https://www.creative-tim.com/product/vue-material-dashboard-laravel-bs4",
     };
   },
   methods: {

@@ -1,21 +1,21 @@
-# [Vue Material Dashboard Laravel](https://vue-material-dashboard-laravel.creative-tim.com/?ref=mdpl-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Vue%20Material%20Dashboard%20Laravel%E2%9D%A4%EF%B8%8F%0Ahttps%3A//vue-material-dashboard-laravel.creative-tim.com/%20%23%vue%20%23%material%20%23design%20%23dashboard%20%23laravel%20via%20%40CreativeTim)
+# [Vue Material Dashboard Laravel BS4](https://vue-material-dashboard-laravel-bs4.creative-tim.com/?ref=mdpl-readme) [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&logo=twitter)](https://twitter.com/home?status=Vue%20Material%20Dashboard%20Laravel%E2%9D%A4%EF%B8%8F%0Ahttps%3A//vue-material-dashboard-laravel-bs4.creative-tim.com/%20%23%vue%20%23%material%20%23design%20%23dashboard%20%23laravel%20via%20%40CreativeTim)
 
-![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/vue-material-dashboard-laravel.svg?maxAge=2592000)](https://github.com/creativetimofficial/vue-material-dashboard-laravel/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/vue-material-dashboard-laravel/vue-material-dashboard-laravel.svg?maxAge=2592000)](https://github.com/creativetimofficial/vue-material-dashboard-laravel/issues?q=is%3Aissue+is%3Aclosed)
+![version](https://img.shields.io/badge/version-1.0.0-blue.svg) ![license](https://img.shields.io/badge/license-MIT-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/vue-material-dashboard-laravel-bs4.svg?maxAge=2592000)](https://github.com/creativetimofficial/vue-material-dashboard-laravel-bs4/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/vue-material-dashboard-laravel-bs4/vue-material-dashboard-laravel-bs4.svg?maxAge=2592000)](https://github.com/creativetimofficial/vue-material-dashboard-laravel-bs4/issues?q=is%3Aissue+is%3Aclosed)
 
 *Frontend version*: Material Dashboard v2.1.2. More info at https://www.creative-tim.com/product/material-dashboard
 
 *Vue version*: Vue Material Dashboard v1.4.0. More info at https://www.creative-tim.com/product/vue-material-dashboard
 
-![Product Image](https://s3.amazonaws.com/creativetim_bucket/products/331/original/opt_md_vuelaravel_thumbnail.jpg)
+![Product Image](https://s3.amazonaws.com/creativetim_bucket/products/729/original/opt_md_vuelaravel_thumbnail.jpg)
 
-What if your frontend came not only with reusable components, but also with a reusable backend? API-driven development is more than just a buzzword and we partnered with [UPDIVISION](https://updivision.com) to prove it. Build awesome-looking apps with a flexible architecture across a variety of devices and operating systems with Vue Material Dashboard Laravel. 
+What if your frontend came not only with reusable components, but also with a reusable backend? API-driven development is more than just a buzzword and we partnered with [UPDIVISION](https://updivision.com) to prove it. Build awesome-looking apps with a flexible architecture across a variety of devices and operating systems with Vue Material Dashboard Laravel.
 
-If you want to get more features, go PRO with [Vue Material Dashboard PRO Laravel](https://www.creative-tim.com/product/vue-material-dashboard-laravel-pro)
+If you want to get more features, go PRO with [Vue Material Dashboard PRO Laravel](https://www.creative-tim.com/product/vue-material-dashboard-laravel-pro-bs4)
 
 # Download
 
 For the free version of the project you can either
-- download the .zip file from the Creative Tim site and extract it or 
+- download the .zip file from the Creative Tim site and extract it or
 - make a clone from the Github repository
 
 You will get two project folders: one for the Laravel API project and one for the Vue frontend.
@@ -33,7 +33,7 @@ JSON:API is a specification for how a client should request that resources be fe
 ### JSON:API backend
 The Laravel JSON:API backend project requires a proper multi-threaded web server such as Apache/Nginx environment with PHP, Composer and MySQL.
 
-**Do not use `php artisan serve` as it will result in stalled requests due to the single-threaded nature of the built-in PHP web server.** 
+**Do not use `php artisan serve` as it will result in stalled requests due to the single-threaded nature of the built-in PHP web server.**
 
 We strongly recommend using [Laradock](https://laradock.io/) for Linux and Mac or [Laragon](https://laragon.org/download/) for Windows if possible.
 
@@ -102,7 +102,7 @@ It uses the auth store located in `src\store\modules\auth.js`.
   <h4 slot="title" class="title">Log in</h4>
   <md-button slot="buttons" ref="#facebook" class="md-just-icon md-simple md-white">
     <i class="fab fa-facebook-square"></i>
-  </md-button> 
+  </md-button>
   <md-button slot="buttons" href="#twitter" class="md-just-icon md-simple md-white">
     <i class="fab fa-twitter"></i>
   </md-button>
@@ -484,21 +484,21 @@ The `src\pages\Dashboard\Examples\UserProfile` is the folder with Vue components
 
 | Vue | Vue & Laravel |
 | --- | --- |
-| [![Vue Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/81/thumb/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard?ref=vmdl-readme) | [![Vue Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/331/thumb/opt_md_vuelaravel_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard-laravel?ref=vmdl-readme) |
+| [![Vue Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/81/thumb/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard?ref=vmdl-readme) | [![Vue Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/729/thumb/opt_md_vuelaravel_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard-laravel-bs4?ref=vmdl-readme) |
 
 ## Demo
 
 | Register | Login | Dashboard |
 | --- | --- | ---  |
-| [![Register](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Register.png)](https://vue-material-dashboard-laravel.creative-tim.com/register?ref=vmdl-readme)  | [![Login](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Login.png)](https://vue-material-dashboard-laravel.creative-tim.com/login?ref=vmdl-readme)  | [![Dashboard](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Dashboard.png)](https://vue-material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme) |
+| [![Register](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Register.png)](https://vue-material-dashboard-laravel-bs4.creative-tim.com/register?ref=vmdl-readme)  | [![Login](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Login.png)](https://vue-material-dashboard-laravel-bs4.creative-tim.com/login?ref=vmdl-readme)  | [![Dashboard](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Dashboard.png)](https://vue-material-dashboard-laravel-bs4.creative-tim.com/?ref=vmdl-readme) |
 
 | Profile Page | Users Page | Tables Page  |
 | --- | --- | ---  |
-| [![Profile Page](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Profile.png)](https://vue-material-dashboard-laravel.creative-tim.com/profile?ref=vmdl-readme)  | [![Users Page](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Users.png)](https://vue-material-dashboard-laravel.creative-tim.com/user?ref=vmdl-readme) | [![Tables Page](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Tables.png)](https://vue-material-dashboard-laravel.creative-tim.com/table-list?ref=vmdl-readme)
-[View More](https://vue-material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme)
+| [![Profile Page](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Profile.png)](https://vue-material-dashboard-laravel-bs4.creative-tim.com/profile?ref=vmdl-readme)  | [![Users Page](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Users.png)](https://vue-material-dashboard-laravel-bs4.creative-tim.com/user?ref=vmdl-readme) | [![Tables Page](https://github.com/creativetimofficial/public-assets/raw/master/vue-material-dashboard-laravel/Tables.png)](https://vue-material-dashboard-laravel-bs4.creative-tim.com/table-list?ref=vmdl-readme)
+[View More](https://vue-material-dashboard-laravel-bs4.creative-tim.com/?ref=vmdl-readme)
 
 ## Documentation
-The documentation for the Vue Material Dashboard Laravel is hosted at our [website](https://vue-material-dashboard-laravel.creative-tim.com/documentation?ref=vmdl-readme).
+The documentation for the Vue Material Dashboard Laravel is hosted at our [website](https://vue-material-dashboard-laravel-bs4.creative-tim.com/documentation?ref=vmdl-readme).
 
 ## File Structure
 ```
@@ -768,12 +768,12 @@ At present, we officially aim to support the last two versions of the following 
 
 
 ## Resources
-- Demo: <https://vue-material-dashboard-laravel.creative-tim.com/?ref=vmdl-readme>
-- Download Page: <https://www.creative-tim.com/product/vue-material-dashboard-laravel?ref=vmdl-readme>
-- Documentation: <https://vue-material-dashboard-laravel.creative-tim.com/documentation?ref=vmdl-readme>
+- Demo: <https://vue-material-dashboard-laravel-bs4.creative-tim.com/?ref=vmdl-readme>
+- Download Page: <https://www.creative-tim.com/product/vue-material-dashboard-laravel-bs4?ref=vmdl-readme>
+- Documentation: <https://vue-material-dashboard-laravel-bs4.creative-tim.com/documentation?ref=vmdl-readme>
 - License Agreement: <https://www.creative-tim.com/license>
 - Support: <https://www.creative-tim.com/contact-us>
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-vue-material-dashboard-laravel/issues)
+- Issues: [Github Issues Page](https://github.com/creativetimofficial/ct-vue-material-dashboard-laravel-bs4/issues)
 - **Dashboards:**
 
 | HTML | Laravel |
@@ -782,7 +782,7 @@ At present, we officially aim to support the last two versions of the following 
 
 | Vue | Vue & Laravel |
 | --- | --- |
-| [![Vue Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/81/thumb/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard?ref=vmdl-readme) | [![Vue Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/331/thumb/opt_md_vuelaravel_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard-laravel?ref=vmdl-readme) |
+| [![Vue Material Dashboard](https://s3.amazonaws.com/creativetim_bucket/products/81/thumb/opt_md_vue_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard?ref=vmdl-readme) | [![Vue Material Dashboard Laravel](https://s3.amazonaws.com/creativetim_bucket/products/729/thumb/opt_md_vuelaravel_thumbnail.jpg)](https://www.creative-tim.com/product/vue-material-dashboard-laravel-bs4?ref=vmdl-readme) |
 
 ## Change log
 
@@ -804,7 +804,7 @@ We use GitHub Issues as the official bug tracker for the Vue Material Dashboard 
 ## Licensing
 
 - Copyright Creative Tim (https://www.creative-tim.com/?ref=vmdl-readme)
-- Licensed under MIT (https://github.com/creativetimofficial/vue-material-dashboard-laravel/blob/master/LICENSE.md)
+- Licensed under MIT (https://github.com/creativetimofficial/vue-material-dashboard-laravel-bs4/blob/master/LICENSE.md)
 
 
 ## Useful Links

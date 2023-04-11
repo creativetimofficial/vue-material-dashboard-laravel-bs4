@@ -91,7 +91,7 @@
 
         <li class="github-buttons">
           <gh-btns-star
-              slug="creativetimofficial/vue-material-dashboard-laravel"
+              slug="creativetimofficial/vue-material-dashboard-laravel-bs4"
               show-count
           ></gh-btns-star>
         </li>
@@ -112,13 +112,13 @@
               <network
                   network="twitter"
                   class="md-button md-round md-twitter"
-                  url="https://vue-material-dashboard-laravel.creative-tim.com/"
+                  url="https://vue-material-dashboard-laravel-bs4.creative-tim.com/"
               >
                 <i class="fab fa-twitter"></i> · 45
               </network>
               <network
                   network="facebook"
-                  url="https://vue-material-dashboard-laravel.creative-tim.com/"
+                  url="https://vue-material-dashboard-laravel-bs4.creative-tim.com/"
                   class="md-button md-round md-facebook"
               >
                 <i class="fab fa-facebook-f"></i> · 50
@@ -145,11 +145,11 @@
     },
     data() {
       return {
-        documentationLink: "https://vue-material-dashboard-laravel.creative-tim.com/documentation/",
-        shareUrl: "https://www.creative-tim.com/product/vue-material-dashboard-laravel",
+        documentationLink: "https://vue-material-dashboard-laravel-bs4.creative-tim.com/documentation/",
+        shareUrl: "https://www.creative-tim.com/product/vue-material-dashboard-laravel-bs4",
         buyUrl: "",
-        downloadUrl: "https://www.creative-tim.com/product/vue-material-dashboard-laravel",
-        upgradeUrl: "https://www.creative-tim.com/product/vue-material-dashboard-laravel-pro",
+        downloadUrl: "https://www.creative-tim.com/product/vue-material-dashboard-laravel-bs4",
+        upgradeUrl: "https://www.creative-tim.com/product/vue-material-dashboard-laravel-pro-bs4",
         isOpen: false,
         backgroundImage: `${process.env.VUE_APP_BASE_URL}/img/sidebar-2.jpg`,
         sidebarColors: [

@@ -138,7 +138,7 @@
         <md-button
           v-if="sidebarMini"
           class="md-button md-danger md-block"
-          href="https://www.creative-tim.com/product/vue-material-dashboard-laravel-pro"
+          href="https://www.creative-tim.com/product/vue-material-dashboard-laravel-pro-bs4"
           target="_blanck"
         >
           <i class="fas fa-download" style="margin-right: 4px"></i>Upgrade to

@@ -7,7 +7,7 @@ module.exports = {
   extend: '@vuepress/theme-default',
   title: 'Vue Material Dashboard Laravel by Creative Tim & UPDIVISION',
   base: '/documentation/',
-  
+
   markdown: {
     config: markdownParser
   },
@@ -21,18 +21,18 @@ module.exports = {
   head: [
     ['link', { rel: 'stylesheet', href: `https://fonts.googleapis.com/icon?family=Material+Icons` }],
     ['link', { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/favicon.png' }],
-    ['link', { rel: 'canonical', href: 'https://www.creative-tim.com/product/vue-material-dashboard-laravel' }],
+    ['link', { rel: 'canonical', href: 'https://www.creative-tim.com/product/vue-material-dashboard-laravel-bs4' }],
     ['meta ', { name: 'keywords', content:'creative tim, updivision, html dashboard, vue, vuejs, laravel, json:api, json, api, html css dashboard laravel, vue material dashboard laravel, vue material dashboard, material vue admin, vue dashboard, vue admin, web dashboard, bootstrap 4 dashboard laravel, bootstrap 4, css3 dashboard, bootstrap 4 admin laravel, material ui dashboard bootstrap 4 laravel, frontend, responsive bootstrap 4 dashboard, material design, material laravel bootstrap 4 dashboard' }],
     ['meta ', { name: 'description', content:'Vue Material Dashboard Laravel helps you build awesome apps with a flexible architecture. It comes with UI components, a Vue Material frontend and an API-powered Laravel backend.' }],
     ['meta ', { itemprop: 'name', content:'Vue Material Dashboard Laravel by Creative Tim & UPDIVISION' }],
     ['meta ', { itemprop: 'description', content:'Vue Material Dashboard Laravel helps you build awesome apps with a flexible architecture. It comes with UI components, a Vue Material frontend and an API-powered Laravel backend.' }],
-    ['meta ', { itemprop: 'image', content:'https://s3.amazonaws.com/creativetim_bucket/products/331/original/opt_md_vuelaravel_thumbnail.jpg' }],
+    ['meta ', { itemprop: 'image', content:'https://s3.amazonaws.com/creativetim_bucket/products/729/original/opt_md_vuelaravel_thumbnail.jpg' }],
     ['meta ', { name: 'twitter:card', content:'product' }],
     ['meta ', { name: 'twitter:site', content:'@creativetim' }],
     ['meta ', { name: 'twitter:title', content:'Vue Material Dashboard Laravel by Creative Tim & UPDIVISION' }],
     ['meta ', { name: 'twitter:description', content:'Vue Material Dashboard Laravel helps you build awesome apps with a flexible architecture. It comes with UI components, a Vue Material frontend and an API-powered Laravel backend.' }],
     ['meta ', { name: 'twitter:creator', content:'@creativetim' }],
-    ['meta ', { name: 'twitter:image', content:'https://s3.amazonaws.com/creativetim_bucket/products/331/original/opt_md_vuelaravel_thumbnail.jpg' }],
+    ['meta ', { name: 'twitter:image', content:'https://s3.amazonaws.com/creativetim_bucket/products/729/original/opt_md_vuelaravel_thumbnail.jpg' }],
     ['meta ', { name: 'twitter:data1', content:'Vue Material Dashboard Laravel by Creative Tim & UPDIVISION' }],
     ['meta ', { name: 'twitter:label1', content:'Product Type' }],
     ['meta ', { name: 'twitter:label2', content:'Price' }],
@@ -40,7 +40,7 @@ module.exports = {
     ['meta ', { property: 'og:titled', content:'Vue Material Dashboard Laravel by Creative Tim & UPDIVISION' }],
     ['meta ', { property: 'og:type', content:'article' }],
     ['meta ', { property: 'og:url', content:'https://www.creative-tim.com/live/vue-material-dashboard-laravel' }],
-    ['meta ', { property: 'og:image', content:'https://s3.amazonaws.com/creativetim_bucket/products/331/original/opt_md_vuelaravel_thumbnail.jpg' }],
+    ['meta ', { property: 'og:image', content:'https://s3.amazonaws.com/creativetim_bucket/products/729/original/opt_md_vuelaravel_thumbnail.jpg' }],
     ['meta ', { property: 'og:description', content:'Vue Material Dashboard Laravel helps you build awesome apps with a flexible architecture. It comes with UI components, a Vue Material frontend and an API-powered Laravel backend.' }],
     ['meta ', { property: 'og:site_name', content:'Creative Tim' }],
     ['script', {}, `
@@ -69,7 +69,7 @@ module.exports = {
       `]
   ],
   themeConfig: {
-    repo: 'creativetimofficial/vue-material-dashboard-laravel-pro',
+    repo: 'creativetimofficial/vue-material-dashboard-laravel-pro-bs4',
     repoLabel: 'Help with a star',
     nav: [
     ],
