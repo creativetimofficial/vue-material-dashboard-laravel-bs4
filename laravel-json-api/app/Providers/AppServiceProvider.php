@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
+use Laravel\Passport\Passport;
 use Illuminate\Support\ServiceProvider;
-use CloudCreativity\LaravelJsonApi\LaravelJsonApi;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,7 +24,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        LaravelJsonApi::defaultApi('v1');
-        LaravelJsonApi::$validationFailures = true;
+        Passport::enablePasswordGrant();
     }
 }

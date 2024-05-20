@@ -1,7 +1,16 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use CloudCreativity\LaravelJsonApi\Facades\JsonApi;
+use LaravelJsonApi\Laravel\Routing\ResourceRegistrar;
+use App\Http\Controllers\Api\V2\Auth\LoginController;
+use App\Http\Controllers\Api\V2\Auth\LogoutController;
+use App\Http\Controllers\Api\V2\Auth\RegisterController;
+use App\Http\Controllers\Api\V2\Auth\ForgotPasswordController;
+use App\Http\Controllers\Api\V2\Auth\ResetPasswordController;
+use App\Http\Controllers\Api\V2\MeController;
+use LaravelJsonApi\Laravel\Facades\JsonApiRoute;
+use LaravelJsonApi\Laravel\Http\Controllers\JsonApiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,17 +23,16 @@ use CloudCreativity\LaravelJsonApi\Facades\JsonApi;
 |
 */
 
-Route::namespace('Api\V1\Auth')->prefix('api/v1')->middleware('json.api')->group(function () {
-    Route::post('/login', 'LoginController');
-    Route::post('/register', 'RegisterController');
-    Route::post('/logout', 'LogoutController')->middleware('auth:api');
-    Route::post('/password-forgot', 'ForgotPasswordController');
-    Route::post('/password-reset', 'ResetPasswordController');
+Route::prefix('v2')->middleware('json.api')->group(function () {
+    Route::post('/login', LoginController::class)->name('login');
+    Route::post('/logout', LogoutController::class)->middleware('auth:api');
+    Route::post('/register', RegisterController::class);
+    Route::post('/password-forgot', ForgotPasswordController::class);
+    Route::post('/password-reset', ResetPasswordController::class)->name('password.reset');
 });
 
-JsonApi::register('v1')->middleware('auth:api')->routes(function ($api) {
-    $api->get('me', 'Api\V1\MeController@readProfile');
-    $api->patch('me', 'Api\V1\MeController@updateProfile');
-
-    $api->resource('users');
+JsonApiRoute::server('v2')->prefix('v2')->resources(function (ResourceRegistrar $server) {
+    $server->resource('users', JsonApiController::class);
+    Route::get('me', [MeController::class, 'readProfile']);
+    Route::patch('me', [MeController::class, 'updateProfile']);
 });
