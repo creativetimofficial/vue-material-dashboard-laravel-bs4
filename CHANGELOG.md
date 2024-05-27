@@ -15,3 +15,6 @@ Compatibility with node.js v16.x LTS
 
 ## Version 1.0.2
 Update to Laravel 9.x
+
+## Version 1.1.0
+Update to Laravel 11.x
